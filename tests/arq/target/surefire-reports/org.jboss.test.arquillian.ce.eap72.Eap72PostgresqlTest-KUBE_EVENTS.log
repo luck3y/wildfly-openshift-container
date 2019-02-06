@@ -1,0 +1,154 @@
+[2018-11-12T23:11:03Z] [Warning] [BuildConfig:eap-app]: (BuildConfigTriggerFailed) error triggering Build for BuildConfig test-arq-eap72-37231c3c/eap-app: Internal error occurred: build config test-arq-eap72-37231c3c/eap-app has already instantiated a build for imageid docker-registry.engineering.redhat.com/kwills/eap72-openshift@sha256:b3580b1962d7dc1975a41c41530b30a6de60e6b66d2b3010c205bbebfdd2a8d5
+[2018-11-12T23:11:04Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-37231c3c/eap-app-1-build to localhost
+[2018-11-12T23:11:04Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-37231c3c/testrunner to localhost
+[2018-11-12T23:11:05Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:11:05Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T23:11:05Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:11:05Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:11:06Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-37231c3c/eap-app-1 is now running
+[2018-11-12T23:11:09Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:11:09Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:11:09Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T23:11:09Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:11:09Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T23:11:10Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T23:11:10Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:11:10Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:11:10Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:11:14Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (DeploymentCreated) Created new replication controller "eap-app-postgresql-1" for version 1
+[2018-11-12T23:11:14Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-37231c3c/eap-app-postgresql-1-deploy to localhost
+[2018-11-12T23:11:15Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:11:15Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Created) Created container
+[2018-11-12T23:11:16Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Started) Started container
+[2018-11-12T23:11:16Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-xxbdt
+[2018-11-12T23:11:16Z] [Normal] [Pod:eap-app-postgresql-1-xxbdt]: (Scheduled) Successfully assigned test-arq-eap72-37231c3c/eap-app-postgresql-1-xxbdt to localhost
+[2018-11-12T23:11:17Z] [Normal] [Pod:eap-app-postgresql-1-xxbdt]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-12T23:11:19Z] [Normal] [Pod:eap-app-postgresql-1-xxbdt]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-12T23:11:19Z] [Normal] [Pod:eap-app-postgresql-1-xxbdt]: (Created) Created container
+[2018-11-12T23:11:19Z] [Normal] [Pod:eap-app-postgresql-1-xxbdt]: (Started) Started container
+[2018-11-12T23:11:33Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-12T23:23:12Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-8dc9f9d9/testrunner to localhost
+[2018-11-12T23:23:12Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-8dc9f9d9/eap-app-1-build to localhost
+[2018-11-12T23:23:13Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:23:13Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T23:23:13Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:23:13Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:23:14Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-8dc9f9d9/eap-app-1 is now running
+[2018-11-12T23:23:17Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T23:23:17Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (DeploymentCreated) Created new replication controller "eap-app-postgresql-1" for version 1
+[2018-11-12T23:23:17Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T23:23:17Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-8dc9f9d9/eap-app-postgresql-1-deploy to localhost
+[2018-11-12T23:23:17Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:23:17Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:23:18Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T23:23:18Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:23:18Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Created) Created container
+[2018-11-12T23:23:18Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:23:18Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-54bbt
+[2018-11-12T23:23:18Z] [Normal] [Pod:eap-app-postgresql-1-54bbt]: (Scheduled) Successfully assigned test-arq-eap72-8dc9f9d9/eap-app-postgresql-1-54bbt to localhost
+[2018-11-12T23:23:18Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:23:18Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:23:18Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Started) Started container
+[2018-11-12T23:23:19Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:23:19Z] [Normal] [Pod:eap-app-postgresql-1-54bbt]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-12T23:23:21Z] [Normal] [Pod:eap-app-postgresql-1-54bbt]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-12T23:23:22Z] [Normal] [Pod:eap-app-postgresql-1-54bbt]: (Created) Created container
+[2018-11-12T23:23:22Z] [Normal] [Pod:eap-app-postgresql-1-54bbt]: (Started) Started container
+[2018-11-12T23:24:37Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T23:24:37Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-8dc9f9d9/eap-app-1-deploy to localhost
+[2018-11-12T23:24:37Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-8dc9f9d9/eap-app-1 completed successfully
+[2018-11-12T23:24:37Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:24:38Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T23:24:38Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-zxzvd
+[2018-11-12T23:24:38Z] [Normal] [Pod:eap-app-1-zxzvd]: (Scheduled) Successfully assigned test-arq-eap72-8dc9f9d9/eap-app-1-zxzvd to localhost
+[2018-11-12T23:24:38Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T23:24:39Z] [Normal] [Pod:eap-app-1-zxzvd]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-8dc9f9d9/eap-app@sha256:ffc85a7190a8528dfd92d1f08fc3a28d4db7440e4296b1df9569d5a9b1a1de72"
+[2018-11-12T23:24:39Z] [Normal] [Pod:eap-app-1-zxzvd]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-8dc9f9d9/eap-app@sha256:ffc85a7190a8528dfd92d1f08fc3a28d4db7440e4296b1df9569d5a9b1a1de72"
+[2018-11-12T23:24:39Z] [Normal] [Pod:eap-app-1-zxzvd]: (Created) Created container
+[2018-11-12T23:24:40Z] [Normal] [Pod:eap-app-1-zxzvd]: (Started) Started container
+[2018-11-13T00:43:44Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-d3f395f6/eap-app-1-build to localhost
+[2018-11-13T00:43:44Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-d3f395f6/testrunner to localhost
+[2018-11-13T00:43:46Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:43:47Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:43:47Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:43:47Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:43:49Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (DeploymentCreated) Created new replication controller "eap-app-postgresql-1" for version 1
+[2018-11-13T00:43:49Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-d3f395f6/eap-app-postgresql-1-deploy to localhost
+[2018-11-13T00:43:49Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-d3f395f6/eap-app-1 is now running
+[2018-11-13T00:43:51Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:43:51Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:43:51Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T00:43:51Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Created) Created container
+[2018-11-13T00:43:51Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-l8x9r
+[2018-11-13T00:43:51Z] [Normal] [Pod:eap-app-postgresql-1-l8x9r]: (Scheduled) Successfully assigned test-arq-eap72-d3f395f6/eap-app-postgresql-1-l8x9r to localhost
+[2018-11-13T00:43:51Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:43:52Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Started) Started container
+[2018-11-13T00:43:52Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:43:52Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T00:43:52Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T00:43:53Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:43:53Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:43:54Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:43:54Z] [Normal] [Pod:eap-app-postgresql-1-l8x9r]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T00:43:56Z] [Normal] [Pod:eap-app-postgresql-1-l8x9r]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T00:43:56Z] [Normal] [Pod:eap-app-postgresql-1-l8x9r]: (Created) Created container
+[2018-11-13T00:43:56Z] [Normal] [Pod:eap-app-postgresql-1-l8x9r]: (Started) Started container
+[2018-11-13T00:44:03Z] [Warning] [Pod:eap-app-postgresql-1-l8x9r]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: could not connect to server: Connection refused
+	Is the server running on host "127.0.0.1" and accepting
+	TCP/IP connections on port 5432?
+
+[2018-11-13T00:45:05Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T00:45:05Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-d3f395f6/eap-app-1-deploy to localhost
+[2018-11-13T00:45:06Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-d3f395f6/eap-app-1 completed successfully
+[2018-11-13T00:45:06Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T00:45:06Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T00:45:07Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-4pb8c
+[2018-11-13T00:45:07Z] [Normal] [Pod:eap-app-1-4pb8c]: (Scheduled) Successfully assigned test-arq-eap72-d3f395f6/eap-app-1-4pb8c to localhost
+[2018-11-13T00:45:07Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T00:45:08Z] [Normal] [Pod:eap-app-1-4pb8c]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-d3f395f6/eap-app@sha256:b1253eeb07cb9bb6dd293f0843aa325fd674f8a6958dbdd46dfd937e459b5489"
+[2018-11-13T00:45:08Z] [Normal] [Pod:eap-app-1-4pb8c]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-d3f395f6/eap-app@sha256:b1253eeb07cb9bb6dd293f0843aa325fd674f8a6958dbdd46dfd937e459b5489"
+[2018-11-13T00:45:08Z] [Normal] [Pod:eap-app-1-4pb8c]: (Created) Created container
+[2018-11-13T00:45:09Z] [Normal] [Pod:eap-app-1-4pb8c]: (Started) Started container
+[2018-11-13T00:45:35Z] [Normal] [Pod:eap-app-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-13T21:15:46Z] [Warning] [BuildConfig:eap-app]: (BuildConfigTriggerFailed) error triggering Build for BuildConfig test-arq-eap72-515735f2/eap-app: Internal error occurred: build config test-arq-eap72-515735f2/eap-app has already instantiated a build for imageid docker-registry.engineering.redhat.com/kwills/eap72-openshift@sha256:b3580b1962d7dc1975a41c41530b30a6de60e6b66d2b3010c205bbebfdd2a8d5
+[2018-11-13T21:15:46Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-515735f2/testrunner to localhost
+[2018-11-13T21:15:46Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-515735f2/eap-app-1-build to localhost
+[2018-11-13T21:15:47Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T21:15:47Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T21:15:47Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T21:15:48Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T21:15:49Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-515735f2/eap-app-1 is now running
+[2018-11-13T21:15:52Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T21:15:52Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T21:15:52Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (DeploymentCreated) Created new replication controller "eap-app-postgresql-1" for version 1
+[2018-11-13T21:15:52Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-515735f2/eap-app-postgresql-1-deploy to localhost
+[2018-11-13T21:15:52Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T21:15:53Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T21:15:53Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Created) Created container
+[2018-11-13T21:15:53Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-jbhzt
+[2018-11-13T21:15:53Z] [Normal] [Pod:eap-app-postgresql-1-jbhzt]: (Scheduled) Successfully assigned test-arq-eap72-515735f2/eap-app-postgresql-1-jbhzt to localhost
+[2018-11-13T21:15:53Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T21:15:53Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T21:15:54Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Started) Started container
+[2018-11-13T21:15:54Z] [Normal] [Pod:eap-app-postgresql-1-jbhzt]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T21:15:54Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T21:15:54Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T21:15:55Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T21:15:55Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T21:15:56Z] [Normal] [Pod:eap-app-postgresql-1-jbhzt]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T21:15:56Z] [Normal] [Pod:eap-app-postgresql-1-jbhzt]: (Created) Created container
+[2018-11-13T21:15:57Z] [Normal] [Pod:eap-app-postgresql-1-jbhzt]: (Started) Started container
+[2018-11-13T21:17:03Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T21:17:03Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-515735f2/eap-app-1-deploy to localhost
+[2018-11-13T21:17:04Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-515735f2/eap-app-1 completed successfully
+[2018-11-13T21:17:04Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T21:17:04Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T21:17:04Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-b9jzr
+[2018-11-13T21:17:04Z] [Normal] [Pod:eap-app-1-b9jzr]: (Scheduled) Successfully assigned test-arq-eap72-515735f2/eap-app-1-b9jzr to localhost
+[2018-11-13T21:17:05Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T21:17:05Z] [Normal] [Pod:eap-app-1-b9jzr]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-515735f2/eap-app@sha256:d8bb628b981af666d703a736bf8b4537c0fd166301ecea690b494a0285a03bf3"
+[2018-11-13T21:17:05Z] [Normal] [Pod:eap-app-1-b9jzr]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-515735f2/eap-app@sha256:d8bb628b981af666d703a736bf8b4537c0fd166301ecea690b494a0285a03bf3"
+[2018-11-13T21:17:05Z] [Normal] [Pod:eap-app-1-b9jzr]: (Created) Created container
+[2018-11-13T21:17:06Z] [Normal] [Pod:eap-app-1-b9jzr]: (Started) Started container

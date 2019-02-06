@@ -1,0 +1,15 @@
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72MongoDbPersistentTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/common/EapBasicTestBase.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/common/EapClusteringTestBase.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72ClusteringTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72BasicTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72MysqlPersistentTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72MongoDbTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/common/EapHttpsTestBase.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/common/TodoList.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72HttpsTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72MysqlTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72PostgresqlPersistentTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/eap72/Eap72PostgresqlTest.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/common/EapPersistentTestBase.java
+/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/src/test/java/org/jboss/test/arquillian/ce/common/EapDbTestBase.java

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest" time="808.066" tests="3" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="startupTimeout" value="6000"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="openshift.imageStreams" value="https://raw.githubusercontent.com/openshift/origin/v3.9.0/examples/image-streams/image-streams-rhel7.json"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/test-classes:/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/classes:/home/kwills/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-openshift/1.18.3-SNAPSHOT/arquillian-cube-openshift-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-api/1.18.3-SNAPSHOT/arquillian-cube-api-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-spi/1.18.3-SNAPSHOT/arquillian-cube-spi-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/reporter/arquillian-core-reporter-api/0.0.3/arquillian-core-reporter-api-0.0.3.jar:/home/kwills/.m2/repository/org/arquillian/reporter/arquillian-reporter-api/0.0.3/arquillian-reporter-api-0.0.3.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-requirement-spi/1.18.3-SNAPSHOT/arquillian-cube-requirement-spi-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-core/1.18.3-SNAPSHOT/arquillian-cube-core-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/commons-io/commons-io/2.3/commons-io-2.3.jar:/home/kwills/.m2/repository/org/apache/commons/commons-compress/1.5/commons-compress-1.5.jar:/home/kwills/.m2/repository/org/tukaani/xz/1.2/xz-1.2.jar:/home/kwills/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-kubernetes/1.18.3-SNAPSHOT/arquillian-cube-kubernetes-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/fabric8-maven-plugin-build/1.18.3-SNAPSHOT/fabric8-maven-plugin-build-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven-embedded/3.0.1/shrinkwrap-resolver-impl-maven-embedded-3.0.1.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven-embedded/3.0.1/shrinkwrap-resolver-api-maven-embedded-3.0.1.jar:/home/kwills/.m2/repository/org/apache/maven/shared/maven-invoker/3.0.0/maven-invoker-3.0.0.jar:/home/kwills/.m2/repository/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api/2.2.6/shrinkwrap-resolver-api-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-spi/2.2.6/shrinkwrap-resolver-spi-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven/2.2.6/shrinkwrap-resolver-api-maven-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-spi-maven/2.2.6/shrinkwrap-resolver-spi-maven-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven-archive/2.2.6/shrinkwrap-resolver-api-maven-archive-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven-archive/2.2.6/shrinkwrap-resolver-impl-maven-archive-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-spi-maven-archive/2.2.6/shrinkwrap-resolver-spi-maven-archive-2.2.6.jar:/home/kwills/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0.M1/org.eclipse.sisu.plexus-0.3.0.M1.jar:/home/kwills/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/home/kwills/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/kwills/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0.M1/org.eclipse.sisu.inject-0.3.0.M1.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/2.3/plexus-compiler-javac-2.3.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-compiler-api/2.3/plexus-compiler-api-2.3.jar:/home/kwills/.m2/repository/org/arquillian/spacelift/arquillian-spacelift/1.0.2/arquillian-spacelift-1.0.2.jar:/home/kwills/.m2/repository/org/arquillian/spacelift/arquillian-spacelift-api/1.0.2/arquillian-spacelift-api-1.0.2.jar:/home/kwills/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.4.1.Final/arquillian-config-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/config/arquillian-config-spi/1.4.1.Final/arquillian-config-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.4.1.Final/arquillian-core-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.4.1.Final/arquillian-config-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0/shrinkwrap-descriptors-api-base-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.4.1.Final/arquillian-test-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/awaitility/awaitility/3.0.0/awaitility-3.0.0.jar:/home/kwills/.m2/repository/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar:/home/kwills/.m2/repository/io/github/lukehutch/fast-classpath-scanner/2.9.3/fast-classpath-scanner-2.9.3.jar:/home/kwills/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/kwills/.m2/repository/io/undertow/undertow-core/1.3.33.Final/undertow-core-1.3.33.Final.jar:/home/kwills/.m2/repository/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar:/home/kwills/.m2/repository/org/jboss/xnio/xnio-api/3.3.6.Final/xnio-api-3.3.6.Final.jar:/home/kwills/.m2/repository/org/jboss/xnio/xnio-nio/3.3.6.Final/xnio-nio-3.3.6.Final.jar:/home/kwills/.m2/repository/io/fabric8/kubernetes-openshift-uberjar/4.0.4/kubernetes-openshift-uberjar-4.0.4-versioned.jar:/home/kwills/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/home/kwills/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.9.1/logging-interceptor-3.9.1.jar:/home/kwills/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.7.7/jackson-dataformat-yaml-2.7.7.jar:/home/kwills/.m2/repository/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.7/jackson-databind-2.7.7.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.7/jackson-core-2.7.7.jar:/home/kwills/.m2/repository/io/fabric8/zjsonpatch/0.3.0/zjsonpatch-0.3.0.jar:/home/kwills/.m2/repository/com/github/mifmif/generex/1.0.1/generex-1.0.1.jar:/home/kwills/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-openshift-api/1.18.3-SNAPSHOT/arquillian-cube-openshift-api-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/jboss/jboss-dmr/1.2.0.Final/jboss-dmr-1.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.2.6/shrinkwrap-api-1.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-impl-javaee/2.0.0/shrinkwrap-descriptors-impl-javaee-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-javaee/2.0.0/shrinkwrap-descriptors-api-javaee-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-impl-base/2.0.0/shrinkwrap-descriptors-impl-base-2.0.0.jar:/home/kwills/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.6.3/jackson-jaxrs-json-provider-2.6.3.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.6.3/jackson-jaxrs-base-2.6.3.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.3/jackson-module-jaxb-annotations-2.6.3.jar:/home/kwills/.m2/repository/com/squareup/okhttp3/okhttp/3.8.0/okhttp-3.8.0.jar:/home/kwills/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/home/kwills/.m2/repository/org/kohsuke/metainf-services/metainf-services/1.6/metainf-services-1.6.jar:/home/kwills/.m2/repository/org/jolokia/jolokia-client-java/1.3.4/jolokia-client-java-1.3.4.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpclient-osgi/4.3.3/httpclient-osgi-4.3.3.jar:/home/kwills/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.4.1.Final/arquillian-junit-container-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.4.1.Final/arquillian-junit-core-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.4.1.Final/arquillian-test-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.4.1.Final/arquillian-container-test-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.4.1.Final/arquillian-container-test-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.4.1.Final/arquillian-container-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.4.1.Final/arquillian-core-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.4.1.Final/arquillian-test-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.4.1.Final/arquillian-container-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0/shrinkwrap-descriptors-spi-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.4.1.Final/arquillian-container-test-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.2.6/shrinkwrap-impl-base-1.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.2.6/shrinkwrap-spi-1.2.6.jar:/home/kwills/.m2/repository/org/jboss/arquillian/protocol/arquillian-protocol-jmx/1.4.1.Final/arquillian-protocol-jmx-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-container-remote/7.2.0.Final/jboss-as-arquillian-container-remote-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-common/7.2.0.Final/jboss-as-arquillian-common-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-osgi/1.0.3.Final/arquillian-container-osgi-1.0.3.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-cdi/1.4.1.Final/arquillian-testenricher-cdi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-ejb/1.4.1.Final/arquillian-testenricher-ejb-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-initialcontext/1.4.1.Final/arquillian-testenricher-initialcontext-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-osgi/1.0.3.Final/arquillian-testenricher-osgi-1.0.3.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-resource/1.4.1.Final/arquillian-testenricher-resource-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-testenricher-msc/7.2.0.Final/jboss-as-arquillian-testenricher-msc-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-server/7.2.0.Final/jboss-as-server-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-controller/7.2.0.Final/jboss-as-controller-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/staxmapper/1.1.0.Final/staxmapper-1.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-domain-http-interface/7.2.0.Final/jboss-as-domain-http-interface-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-domain-management/7.2.0.Final/jboss-as-domain-management-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/com/sun/httpserver/httpserver/1.0.1.Final/httpserver-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-deployment-repository/7.2.0.Final/jboss-as-deployment-repository-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-platform-mbean/7.2.0.Final/jboss-as-platform-mbean-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-process-controller/7.2.0.Final/jboss-as-process-controller-7.2.0.Final.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/../lib/tools.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-remoting/7.2.0.Final/jboss-as-remoting-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-network/7.2.0.Final/jboss-as-network-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-version/7.2.0.Final/jboss-as-version-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jandex/1.0.3.Final/jandex-1.0.3.Final.jar:/home/kwills/.m2/repository/org/jboss/invocation/jboss-invocation/1.1.1.Final/jboss-invocation-1.1.1.Final.jar:/home/kwills/.m2/repository/org/jboss/logmanager/log4j-jboss-logmanager/1.0.1.Final/log4j-jboss-logmanager-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/stdio/jboss-stdio/1.0.1.GA/jboss-stdio-1.0.1.GA.jar:/home/kwills/.m2/repository/org/jboss/jboss-vfs/3.1.0.Final/jboss-vfs-3.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/msc/jboss-msc/1.0.4.GA/jboss-msc-1.0.4.GA.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-controller-client/7.2.0.Final/jboss-as-controller-client-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-protocol/7.2.0.Final/jboss-as-protocol-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/threads/jboss-threads/2.1.0.Final/jboss-threads-2.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-jmx/7.2.0.Final/jboss-as-jmx-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jboss-common-core/2.2.17.GA/jboss-common-core-2.2.17.GA.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-naming/7.2.0.Final/jboss-as-naming-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jboss-remote-naming/1.0.5.Final/jboss-remote-naming-1.0.5.Final.jar:/home/kwills/.m2/repository/org/jboss/jboss-ejb-client/1.0.0.Final/jboss-ejb-client-1.0.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/spi/jbosgi-spi/3.2.0.Final/jbosgi-spi-3.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/metadata/jbosgi-metadata/2.1.1.CR9/jbosgi-metadata-2.1.1.CR9.jar:/home/kwills/.m2/repository/org/jboss/osgi/vfs/jbosgi-vfs30/1.2.0.Final/jbosgi-vfs30-1.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/vfs/jbosgi-vfs/1.2.0.Final/jbosgi-vfs-1.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven/2.2.6/shrinkwrap-resolver-impl-maven-2.2.6.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-impl/1.0.0.v20140518/aether-impl-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-spi/1.0.0.v20140518/aether-spi-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-connector-basic/1.0.0.v20140518/aether-connector-basic-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-transport-wagon/1.0.0.v20140518/aether-transport-wagon-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/apache/maven/maven-aether-provider/3.2.5/maven-aether-provider-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-model/3.2.5/maven-model-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-model-builder/3.2.5/maven-model-builder-3.2.5.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-repository-metadata/3.2.5/maven-repository-metadata-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-settings/3.2.5/maven-settings-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-settings-builder/3.2.5/maven-settings-builder-3.2.5.jar:/home/kwills/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar:/home/kwills/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/kwills/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-provider-api/2.6/wagon-provider-api-2.6.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-file/2.6/wagon-file-2.6.jar:/home/kwills/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-http-lightweight/2.6/wagon-http-lightweight-2.6.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-http-shared/2.6/wagon-http-shared-2.6.jar:/home/kwills/.m2/repository/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.jar:/home/kwills/.m2/repository/org/jboss/remotingjmx/remoting-jmx/1.1.0.Final/remoting-jmx-1.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/logmanager/jboss-logmanager/1.4.0.Final/jboss-logmanager-1.4.0.Final.jar:/home/kwills/.m2/repository/org/jboss/logging/jboss-logging-processor/1.1.0.Final/jboss-logging-processor-1.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jdeparser/jdeparser/1.0.0.Final/jdeparser-1.0.0.Final.jar:/home/kwills/.m2/repository/org/jboss/remoting3/jboss-remoting/3.2.12.GA/jboss-remoting-3.2.12.GA.jar:/home/kwills/.m2/repository/org/jboss/sasl/jboss-sasl/1.0.3.Final/jboss-sasl-1.0.3.Final.jar:/home/kwills/.m2/repository/org/osgi/org.osgi.core/4.2.0/org.osgi.core-4.2.0.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-protocol-jmx/7.2.0.Final/jboss-as-arquillian-protocol-jmx-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-osgi-service/7.2.0.Final/jboss-as-osgi-service-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-ee/7.2.0.Final/jboss-as-ee-7.2.0.Final.jar:/home/kwills/.m2/repository/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar:/home/kwills/.m2/repository/org/jboss/metadata/jboss-metadata-common/7.0.8.Final/jboss-metadata-common-7.0.8.Final.jar:/home/kwills/.m2/repository/org/jboss/metadata/jboss-metadata-ear/7.0.8.Final/jboss-metadata-ear-7.0.8.Final.jar:/home/kwills/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final/jboss-interceptors-api_1.1_spec-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/modules/jboss-modules/1.2.0.CR1/jboss-modules-1.2.0.CR1.jar:/home/kwills/.m2/repository/org/jboss/osgi/framework/jbosgi-framework-core/2.1.0.CR12/jbosgi-framework-core-2.1.0.CR12.jar:/home/kwills/.m2/repository/org/jboss/osgi/deployment/jbosgi-deployment/1.3.0.CR1/jbosgi-deployment-1.3.0.CR1.jar:/home/kwills/.m2/repository/org/jboss/osgi/resolver/jbosgi-resolver-felix/3.0.1.Final/jbosgi-resolver-felix-3.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/resolver/jbosgi-resolver-api/3.0.1.Final/jbosgi-resolver-api-3.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/repository/jbosgi-repository-api/2.1.0.Final/jbosgi-repository-api-2.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/repository/jbosgi-repository-core/2.1.0.Final/jbosgi-repository-core-2.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/marshalling/jboss-marshalling-river/1.3.16.GA/jboss-marshalling-river-1.3.16.GA.jar:/home/kwills/.m2/repository/org/jboss/marshalling/jboss-marshalling/1.3.16.GA/jboss-marshalling-1.3.16.GA.jar:/home/kwills/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.4.1.Final/arquillian-core-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-build-config/7.2.0.Final/jboss-as-build-config-7.2.0.Final.jar:/home/kwills/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/kwills/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/kwills/.m2/repository/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar:/home/kwills/.m2/repository/org/codehaus/groovy/groovy/2.4.12/groovy-2.4.12.jar:/home/kwills/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.12/groovy-xml-2.4.12.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/kwills/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/kwills/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar:/home/kwills/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/home/kwills/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/kwills/.m2/repository/io/rest-assured/json-path/3.1.1/json-path-3.1.1.jar:/home/kwills/.m2/repository/org/codehaus/groovy/groovy-json/2.4.12/groovy-json-2.4.12.jar:/home/kwills/.m2/repository/io/rest-assured/rest-assured-common/3.1.1/rest-assured-common-3.1.1.jar:/home/kwills/.m2/repository/io/rest-assured/xml-path/3.1.1/xml-path-3.1.1.jar:/home/kwills/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:"/>
+    <property name="forkCount" value="1"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="template.prefix" value="eap72"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="sun.net.spi.nameservice.provider.1" value="dns,ArquillianCubeNameService"/>
+    <property name="user.timezone" value=""/>
+    <property name="sun.net.spi.nameservice.provider.2" value="default"/>
+    <property name="image.stream.image" value="docker-registry.engineering.redhat.com/kwills/eap72-openshift:DNSPING-GMS-1"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/surefire/surefirebooter7147176388365807401.jar /home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/surefire 2018-11-13T15-39-31_425-jvmRun1 surefire3967065339228039636tmp surefire_0733554818795267786tmp"/>
+    <property name="image" value="docker-registry.engineering.redhat.com/kwills/eap72-openshift:DNSPING-GMS-1"/>
+    <property name="secrets.branch" value="master"/>
+    <property name="test" value="org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest"/>
+    <property name="surefire.test.class.path" value="/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/test-classes:/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/classes:/home/kwills/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-openshift/1.18.3-SNAPSHOT/arquillian-cube-openshift-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-api/1.18.3-SNAPSHOT/arquillian-cube-api-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-spi/1.18.3-SNAPSHOT/arquillian-cube-spi-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/reporter/arquillian-core-reporter-api/0.0.3/arquillian-core-reporter-api-0.0.3.jar:/home/kwills/.m2/repository/org/arquillian/reporter/arquillian-reporter-api/0.0.3/arquillian-reporter-api-0.0.3.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-requirement-spi/1.18.3-SNAPSHOT/arquillian-cube-requirement-spi-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-core/1.18.3-SNAPSHOT/arquillian-cube-core-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/commons-io/commons-io/2.3/commons-io-2.3.jar:/home/kwills/.m2/repository/org/apache/commons/commons-compress/1.5/commons-compress-1.5.jar:/home/kwills/.m2/repository/org/tukaani/xz/1.2/xz-1.2.jar:/home/kwills/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-kubernetes/1.18.3-SNAPSHOT/arquillian-cube-kubernetes-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/arquillian/cube/fabric8-maven-plugin-build/1.18.3-SNAPSHOT/fabric8-maven-plugin-build-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven-embedded/3.0.1/shrinkwrap-resolver-impl-maven-embedded-3.0.1.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven-embedded/3.0.1/shrinkwrap-resolver-api-maven-embedded-3.0.1.jar:/home/kwills/.m2/repository/org/apache/maven/shared/maven-invoker/3.0.0/maven-invoker-3.0.0.jar:/home/kwills/.m2/repository/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api/2.2.6/shrinkwrap-resolver-api-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-spi/2.2.6/shrinkwrap-resolver-spi-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven/2.2.6/shrinkwrap-resolver-api-maven-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-spi-maven/2.2.6/shrinkwrap-resolver-spi-maven-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-api-maven-archive/2.2.6/shrinkwrap-resolver-api-maven-archive-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven-archive/2.2.6/shrinkwrap-resolver-impl-maven-archive-2.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-spi-maven-archive/2.2.6/shrinkwrap-resolver-spi-maven-archive-2.2.6.jar:/home/kwills/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0.M1/org.eclipse.sisu.plexus-0.3.0.M1.jar:/home/kwills/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/home/kwills/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/kwills/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0.M1/org.eclipse.sisu.inject-0.3.0.M1.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/2.3/plexus-compiler-javac-2.3.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-compiler-api/2.3/plexus-compiler-api-2.3.jar:/home/kwills/.m2/repository/org/arquillian/spacelift/arquillian-spacelift/1.0.2/arquillian-spacelift-1.0.2.jar:/home/kwills/.m2/repository/org/arquillian/spacelift/arquillian-spacelift-api/1.0.2/arquillian-spacelift-api-1.0.2.jar:/home/kwills/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.4.1.Final/arquillian-config-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/config/arquillian-config-spi/1.4.1.Final/arquillian-config-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.4.1.Final/arquillian-core-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.4.1.Final/arquillian-config-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0/shrinkwrap-descriptors-api-base-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.4.1.Final/arquillian-test-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/awaitility/awaitility/3.0.0/awaitility-3.0.0.jar:/home/kwills/.m2/repository/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar:/home/kwills/.m2/repository/io/github/lukehutch/fast-classpath-scanner/2.9.3/fast-classpath-scanner-2.9.3.jar:/home/kwills/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/kwills/.m2/repository/io/undertow/undertow-core/1.3.33.Final/undertow-core-1.3.33.Final.jar:/home/kwills/.m2/repository/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar:/home/kwills/.m2/repository/org/jboss/xnio/xnio-api/3.3.6.Final/xnio-api-3.3.6.Final.jar:/home/kwills/.m2/repository/org/jboss/xnio/xnio-nio/3.3.6.Final/xnio-nio-3.3.6.Final.jar:/home/kwills/.m2/repository/io/fabric8/kubernetes-openshift-uberjar/4.0.4/kubernetes-openshift-uberjar-4.0.4-versioned.jar:/home/kwills/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/home/kwills/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.9.1/logging-interceptor-3.9.1.jar:/home/kwills/.m2/repository/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.7.7/jackson-dataformat-yaml-2.7.7.jar:/home/kwills/.m2/repository/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.7/jackson-databind-2.7.7.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.7/jackson-core-2.7.7.jar:/home/kwills/.m2/repository/io/fabric8/zjsonpatch/0.3.0/zjsonpatch-0.3.0.jar:/home/kwills/.m2/repository/com/github/mifmif/generex/1.0.1/generex-1.0.1.jar:/home/kwills/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/home/kwills/.m2/repository/org/arquillian/cube/arquillian-cube-openshift-api/1.18.3-SNAPSHOT/arquillian-cube-openshift-api-1.18.3-SNAPSHOT.jar:/home/kwills/.m2/repository/org/jboss/jboss-dmr/1.2.0.Final/jboss-dmr-1.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.2.6/shrinkwrap-api-1.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-impl-javaee/2.0.0/shrinkwrap-descriptors-impl-javaee-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-javaee/2.0.0/shrinkwrap-descriptors-api-javaee-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-impl-base/2.0.0/shrinkwrap-descriptors-impl-base-2.0.0.jar:/home/kwills/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.6.3/jackson-jaxrs-json-provider-2.6.3.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.6.3/jackson-jaxrs-base-2.6.3.jar:/home/kwills/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.3/jackson-module-jaxb-annotations-2.6.3.jar:/home/kwills/.m2/repository/com/squareup/okhttp3/okhttp/3.8.0/okhttp-3.8.0.jar:/home/kwills/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/home/kwills/.m2/repository/org/kohsuke/metainf-services/metainf-services/1.6/metainf-services-1.6.jar:/home/kwills/.m2/repository/org/jolokia/jolokia-client-java/1.3.4/jolokia-client-java-1.3.4.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpclient-osgi/4.3.3/httpclient-osgi-4.3.3.jar:/home/kwills/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.4.1.Final/arquillian-junit-container-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.4.1.Final/arquillian-junit-core-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.4.1.Final/arquillian-test-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.4.1.Final/arquillian-container-test-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.4.1.Final/arquillian-container-test-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.4.1.Final/arquillian-container-spi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.4.1.Final/arquillian-core-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.4.1.Final/arquillian-test-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.4.1.Final/arquillian-container-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0/shrinkwrap-descriptors-spi-2.0.0.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.4.1.Final/arquillian-container-test-impl-base-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.2.6/shrinkwrap-impl-base-1.2.6.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.2.6/shrinkwrap-spi-1.2.6.jar:/home/kwills/.m2/repository/org/jboss/arquillian/protocol/arquillian-protocol-jmx/1.4.1.Final/arquillian-protocol-jmx-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-container-remote/7.2.0.Final/jboss-as-arquillian-container-remote-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-common/7.2.0.Final/jboss-as-arquillian-common-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/container/arquillian-container-osgi/1.0.3.Final/arquillian-container-osgi-1.0.3.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-cdi/1.4.1.Final/arquillian-testenricher-cdi-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-ejb/1.4.1.Final/arquillian-testenricher-ejb-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-initialcontext/1.4.1.Final/arquillian-testenricher-initialcontext-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-osgi/1.0.3.Final/arquillian-testenricher-osgi-1.0.3.Final.jar:/home/kwills/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-resource/1.4.1.Final/arquillian-testenricher-resource-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-testenricher-msc/7.2.0.Final/jboss-as-arquillian-testenricher-msc-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-server/7.2.0.Final/jboss-as-server-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-controller/7.2.0.Final/jboss-as-controller-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/staxmapper/1.1.0.Final/staxmapper-1.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-domain-http-interface/7.2.0.Final/jboss-as-domain-http-interface-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-domain-management/7.2.0.Final/jboss-as-domain-management-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/com/sun/httpserver/httpserver/1.0.1.Final/httpserver-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-deployment-repository/7.2.0.Final/jboss-as-deployment-repository-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-platform-mbean/7.2.0.Final/jboss-as-platform-mbean-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-process-controller/7.2.0.Final/jboss-as-process-controller-7.2.0.Final.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/../lib/tools.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-remoting/7.2.0.Final/jboss-as-remoting-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-network/7.2.0.Final/jboss-as-network-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-version/7.2.0.Final/jboss-as-version-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jandex/1.0.3.Final/jandex-1.0.3.Final.jar:/home/kwills/.m2/repository/org/jboss/invocation/jboss-invocation/1.1.1.Final/jboss-invocation-1.1.1.Final.jar:/home/kwills/.m2/repository/org/jboss/logmanager/log4j-jboss-logmanager/1.0.1.Final/log4j-jboss-logmanager-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/stdio/jboss-stdio/1.0.1.GA/jboss-stdio-1.0.1.GA.jar:/home/kwills/.m2/repository/org/jboss/jboss-vfs/3.1.0.Final/jboss-vfs-3.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/msc/jboss-msc/1.0.4.GA/jboss-msc-1.0.4.GA.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-controller-client/7.2.0.Final/jboss-as-controller-client-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-protocol/7.2.0.Final/jboss-as-protocol-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/threads/jboss-threads/2.1.0.Final/jboss-threads-2.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-jmx/7.2.0.Final/jboss-as-jmx-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jboss-common-core/2.2.17.GA/jboss-common-core-2.2.17.GA.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-naming/7.2.0.Final/jboss-as-naming-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jboss-remote-naming/1.0.5.Final/jboss-remote-naming-1.0.5.Final.jar:/home/kwills/.m2/repository/org/jboss/jboss-ejb-client/1.0.0.Final/jboss-ejb-client-1.0.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/spi/jbosgi-spi/3.2.0.Final/jbosgi-spi-3.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/metadata/jbosgi-metadata/2.1.1.CR9/jbosgi-metadata-2.1.1.CR9.jar:/home/kwills/.m2/repository/org/jboss/osgi/vfs/jbosgi-vfs30/1.2.0.Final/jbosgi-vfs30-1.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/vfs/jbosgi-vfs/1.2.0.Final/jbosgi-vfs-1.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-impl-maven/2.2.6/shrinkwrap-resolver-impl-maven-2.2.6.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-impl/1.0.0.v20140518/aether-impl-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-spi/1.0.0.v20140518/aether-spi-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-connector-basic/1.0.0.v20140518/aether-connector-basic-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/eclipse/aether/aether-transport-wagon/1.0.0.v20140518/aether-transport-wagon-1.0.0.v20140518.jar:/home/kwills/.m2/repository/org/apache/maven/maven-aether-provider/3.2.5/maven-aether-provider-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-model/3.2.5/maven-model-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-model-builder/3.2.5/maven-model-builder-3.2.5.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-repository-metadata/3.2.5/maven-repository-metadata-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-settings/3.2.5/maven-settings-3.2.5.jar:/home/kwills/.m2/repository/org/apache/maven/maven-settings-builder/3.2.5/maven-settings-builder-3.2.5.jar:/home/kwills/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar:/home/kwills/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar:/home/kwills/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/kwills/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-provider-api/2.6/wagon-provider-api-2.6.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-file/2.6/wagon-file-2.6.jar:/home/kwills/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-http-lightweight/2.6/wagon-http-lightweight-2.6.jar:/home/kwills/.m2/repository/org/apache/maven/wagon/wagon-http-shared/2.6/wagon-http-shared-2.6.jar:/home/kwills/.m2/repository/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.jar:/home/kwills/.m2/repository/org/jboss/remotingjmx/remoting-jmx/1.1.0.Final/remoting-jmx-1.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/logmanager/jboss-logmanager/1.4.0.Final/jboss-logmanager-1.4.0.Final.jar:/home/kwills/.m2/repository/org/jboss/logging/jboss-logging-processor/1.1.0.Final/jboss-logging-processor-1.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/jdeparser/jdeparser/1.0.0.Final/jdeparser-1.0.0.Final.jar:/home/kwills/.m2/repository/org/jboss/remoting3/jboss-remoting/3.2.12.GA/jboss-remoting-3.2.12.GA.jar:/home/kwills/.m2/repository/org/jboss/sasl/jboss-sasl/1.0.3.Final/jboss-sasl-1.0.3.Final.jar:/home/kwills/.m2/repository/org/osgi/org.osgi.core/4.2.0/org.osgi.core-4.2.0.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-arquillian-protocol-jmx/7.2.0.Final/jboss-as-arquillian-protocol-jmx-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-osgi-service/7.2.0.Final/jboss-as-osgi-service-7.2.0.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-ee/7.2.0.Final/jboss-as-ee-7.2.0.Final.jar:/home/kwills/.m2/repository/org/hibernate/hibernate-validator/4.3.1.Final/hibernate-validator-4.3.1.Final.jar:/home/kwills/.m2/repository/org/jboss/metadata/jboss-metadata-common/7.0.8.Final/jboss-metadata-common-7.0.8.Final.jar:/home/kwills/.m2/repository/org/jboss/metadata/jboss-metadata-ear/7.0.8.Final/jboss-metadata-ear-7.0.8.Final.jar:/home/kwills/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final/jboss-interceptors-api_1.1_spec-1.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/modules/jboss-modules/1.2.0.CR1/jboss-modules-1.2.0.CR1.jar:/home/kwills/.m2/repository/org/jboss/osgi/framework/jbosgi-framework-core/2.1.0.CR12/jbosgi-framework-core-2.1.0.CR12.jar:/home/kwills/.m2/repository/org/jboss/osgi/deployment/jbosgi-deployment/1.3.0.CR1/jbosgi-deployment-1.3.0.CR1.jar:/home/kwills/.m2/repository/org/jboss/osgi/resolver/jbosgi-resolver-felix/3.0.1.Final/jbosgi-resolver-felix-3.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/resolver/jbosgi-resolver-api/3.0.1.Final/jbosgi-resolver-api-3.0.1.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/repository/jbosgi-repository-api/2.1.0.Final/jbosgi-repository-api-2.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/osgi/repository/jbosgi-repository-core/2.1.0.Final/jbosgi-repository-core-2.1.0.Final.jar:/home/kwills/.m2/repository/org/jboss/marshalling/jboss-marshalling-river/1.3.16.GA/jboss-marshalling-river-1.3.16.GA.jar:/home/kwills/.m2/repository/org/jboss/marshalling/jboss-marshalling/1.3.16.GA/jboss-marshalling-1.3.16.GA.jar:/home/kwills/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.4.1.Final/arquillian-core-api-1.4.1.Final.jar:/home/kwills/.m2/repository/org/jboss/as/jboss-as-build-config/7.2.0.Final/jboss-as-build-config-7.2.0.Final.jar:/home/kwills/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/kwills/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/kwills/.m2/repository/io/rest-assured/rest-assured/3.1.1/rest-assured-3.1.1.jar:/home/kwills/.m2/repository/org/codehaus/groovy/groovy/2.4.12/groovy-2.4.12.jar:/home/kwills/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.12/groovy-xml-2.4.12.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/kwills/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/kwills/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/kwills/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar:/home/kwills/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/home/kwills/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/kwills/.m2/repository/io/rest-assured/json-path/3.1.1/json-path-3.1.1.jar:/home/kwills/.m2/repository/org/codehaus/groovy/groovy-json/2.4.12/groovy-json-2.4.12.jar:/home/kwills/.m2/repository/io/rest-assured/rest-assured-common/3.1.1/rest-assured-common-3.1.1.jar:/home/kwills/.m2/repository/io/rest-assured/xml-path/3.1.1/xml-path-3.1.1.jar:/home/kwills/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/kwills"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="image.stream.name" value="jboss-eap72-openshift"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="template.uri" value="https://raw.githubusercontent.com/jboss-container-images/jboss-eap-7-openshift-image/eap72-dev/templates/"/>
+    <property name="kubernetes.auth.token" value=""/>
+    <property name="surefire.real.class.path" value="/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/surefire/surefirebooter7147176388365807401.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="user.name" value="kwills"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.18.17-200.fc28.x86_64"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/kwills/.m2/repository"/>
+    <property name="arq.extension.openshift.routerHost" value=""/>
+    <property name="kubernetes.master" value=""/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target"/>
+    <property name="secrets.repository" value="jboss-openshift"/>
+    <property name="image.stream.version" value="1.0"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="user.dir" value="/home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value=":/home/kwills/local/energia/lib:/home/kwills/local/MSP430Flasher_1.3.7:/home/kwills/local/energia/lib:/home/kwills/local/MSP430Flasher_1.3.7:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-8.fc28.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="route.suffix" value="cloudapps.example.com"/>
+  </properties>
+  <testcase name="testAppStillWorksWhenScalingDown" classname="org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest" time="285.765"/>
+  <testcase name="testSession" classname="org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest" time="181.968">
+    <failure message="https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-1-7zzfd:8080/proxy/cluster1/StoreInSession expected:&lt;[8c235604-e0ec-4f3a-91a3-6fa7ee13ecfc]&gt; but was:&lt;[null]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-1-7zzfd:8080/proxy/cluster1/StoreInSession expected:<[8c235604-e0ec-4f3a-91a3-6fa7ee13ecfc]> but was:<[null]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.jboss.test.arquillian.ce.common.EapClusteringTestBase.testSession(EapClusteringTestBase.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.jboss.arquillian.junit.Arquillian$8$1.invokeMethod(Arquillian.java:325)
+	at org.jboss.arquillian.junit.MethodInvoker$1.invoke(MethodInvoker.java:18)
+	at org.jboss.arquillian.container.test.impl.execution.LocalTestExecuter.execute(LocalTestExecuter.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.test.impl.execution.ClientTestExecuter.execute(ClientTestExecuter.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createContext(ContainerEventController.java:128)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createTestContext(ContainerEventController.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.test(EventTestRunnerAdaptor.java:139)
+	at org.jboss.arquillian.junit.MethodInvoker.invoke(MethodInvoker.java:15)
+	at org.jboss.arquillian.junit.Arquillian$8.evaluate(Arquillian.java:332)
+	at org.jboss.arquillian.junit.Arquillian$4.evaluate(Arquillian.java:204)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:350)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:215)
+	at org.jboss.arquillian.junit.Arquillian$7$1.invoke(Arquillian.java:279)
+	at org.jboss.arquillian.container.test.impl.execution.ClientBeforeAfterLifecycleEventExecuter.execute(ClientBeforeAfterLifecycleEventExecuter.java:88)
+	at org.jboss.arquillian.container.test.impl.execution.ClientBeforeAfterLifecycleEventExecuter.on(ClientBeforeAfterLifecycleEventExecuter.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createContext(ContainerEventController.java:128)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createBeforeContext(ContainerEventController.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.fireCustomLifecycle(EventTestRunnerAdaptor.java:159)
+	at org.jboss.arquillian.junit.Arquillian$7.evaluate(Arquillian.java:273)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:166)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:350)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:177)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></failure>
+    <system-out><![CDATA[Scaling to: 2
+[2018-11-13T21:46:08Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 2
+
+[2018-11-13T21:46:08Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-7zzfd
+
+[2018-11-13T21:46:08Z] [Normal] [Pod:eap-app-1-7zzfd]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-1-7zzfd to localhost
+
+[2018-11-13T21:46:09Z] [Normal] [Pod:eap-app-1-7zzfd]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:46:09Z] [Normal] [Pod:eap-app-1-7zzfd]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:46:09Z] [Normal] [Pod:eap-app-1-7zzfd]: (Created) Created container
+
+[2018-11-13T21:46:10Z] [Normal] [Pod:eap-app-1-7zzfd]: (Started) Started container
+
+Total Pods: 2
+Pod: eap-app-1-7zzfd
+Pod: eap-app-1-gpghv
+ServletURL: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-1-7zzfd:8080/proxy/cluster1/StoreInSession
+Response: OK
+Cookie: JSESSIONID=KoSJh3G5uzfQSm9oB4nVFSt3T1hpEoYoTpy8lY9l.eap-app-1-7zzfd; path=/cluster1
+RetrieveURL: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-1-gpghv:8080/proxy/cluster1/StoreInSession
+Scaling to: 3
+[2018-11-13T21:46:25Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 2 to 3
+
+[2018-11-13T21:46:25Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-rvrd7
+
+[2018-11-13T21:46:25Z] [Normal] [Pod:eap-app-1-rvrd7]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-1-rvrd7 to localhost
+
+[2018-11-13T21:46:26Z] [Normal] [Pod:eap-app-1-rvrd7]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:46:26Z] [Normal] [Pod:eap-app-1-rvrd7]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:46:26Z] [Normal] [Pod:eap-app-1-rvrd7]: (Created) Created container
+
+[2018-11-13T21:46:27Z] [Normal] [Pod:eap-app-1-rvrd7]: (Started) Started container
+
+Total Pods: 3
+Pod: eap-app-1-7zzfd
+Pod: eap-app-1-gpghv
+Pod: eap-app-1-rvrd7
+RetrieveURL: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-1-rvrd7:8080/proxy/cluster1/StoreInSession
+]]></system-out>
+    <system-err><![CDATA[Nov 13, 2018 3:46:08 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor createOpenShiftResource
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method public void org.jboss.test.arquillian.ce.common.EapClusteringTestBase.testSession() throws java.lang.Exception
+Nov 13, 2018 3:46:08 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier applyKubernetesResourcesAtMethodScope
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method testSession
+Nov 13, 2018 3:46:08 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 2], timeout: 600s, check period: 4000ms
+Nov 13, 2018 3:46:24 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 2 (pods: [eap-app-1-7zzfd, eap-app-1-gpghv])
+Nov 13, 2018 3:46:24 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 2] is ready.
+Nov 13, 2018 3:46:25 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 3], timeout: 600s, check period: 4000ms
+Nov 13, 2018 3:49:10 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 3 (pods: [eap-app-1-7zzfd, eap-app-1-gpghv, eap-app-1-rvrd7])
+Nov 13, 2018 3:49:10 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 3] is ready.
+Nov 13, 2018 3:49:10 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor deleteOpenShiftResource
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method testSession
+Nov 13, 2018 3:49:10 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier removeKubernetesResourcesAtMethodScope
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method testSession
+]]></system-err>
+  </testcase>
+  <testcase name="testSessionWithProxy" classname="org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest" time="220.198">
+    <failure message="https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-2-52fq9:8080/proxy/cluster1/StoreInSession expected:&lt;[6523c67f-5d48-4976-a068-ae990d4e3edc]&gt; but was:&lt;[null]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-2-52fq9:8080/proxy/cluster1/StoreInSession expected:<[6523c67f-5d48-4976-a068-ae990d4e3edc]> but was:<[null]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.jboss.test.arquillian.ce.common.EapClusteringTestBase.testSession(EapClusteringTestBase.java:99)
+	at org.jboss.test.arquillian.ce.common.EapClusteringTestBase.testSessionWithProxy(EapClusteringTestBase.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.jboss.arquillian.junit.Arquillian$8$1.invokeMethod(Arquillian.java:325)
+	at org.jboss.arquillian.junit.MethodInvoker$1.invoke(MethodInvoker.java:18)
+	at org.jboss.arquillian.container.test.impl.execution.LocalTestExecuter.execute(LocalTestExecuter.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:62)
+	at org.jboss.arquillian.container.test.impl.execution.ClientTestExecuter.execute(ClientTestExecuter.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createContext(ContainerEventController.java:128)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createTestContext(ContainerEventController.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at sun.reflect.GeneratedMethodAccessor567.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at sun.reflect.GeneratedMethodAccessor568.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.test(EventTestRunnerAdaptor.java:139)
+	at org.jboss.arquillian.junit.MethodInvoker.invoke(MethodInvoker.java:15)
+	at org.jboss.arquillian.junit.Arquillian$8.evaluate(Arquillian.java:332)
+	at org.jboss.arquillian.junit.Arquillian$4.evaluate(Arquillian.java:204)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:350)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$5.evaluate(Arquillian.java:215)
+	at org.jboss.arquillian.junit.Arquillian$7$1.invoke(Arquillian.java:279)
+	at org.jboss.arquillian.container.test.impl.execution.ClientBeforeAfterLifecycleEventExecuter.execute(ClientBeforeAfterLifecycleEventExecuter.java:88)
+	at org.jboss.arquillian.container.test.impl.execution.ClientBeforeAfterLifecycleEventExecuter.on(ClientBeforeAfterLifecycleEventExecuter.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createContext(ContainerEventController.java:128)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.createBeforeContext(ContainerEventController.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createTestContext(TestContextHandler.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:133)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:105)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.fireCustomLifecycle(EventTestRunnerAdaptor.java:159)
+	at org.jboss.arquillian.junit.Arquillian$7.evaluate(Arquillian.java:273)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:166)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:350)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:177)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]></failure>
+    <system-out><![CDATA[Scaling to: 1
+[2018-11-13T21:49:11Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 3 to 1
+
+[2018-11-13T21:49:11Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-7zzfd
+
+[2018-11-13T21:49:11Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-rvrd7
+
+[2018-11-13T21:49:14Z] [Normal] [Pod:eap-app-1-rvrd7]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+
+[2018-11-13T21:49:15Z] [Normal] [Pod:eap-app-1-7zzfd]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+
+Total Pods: 3
+Pod: eap-app-1-7zzfd
+Pod: eap-app-1-gpghv
+Pod: eap-app-1-rvrd7
+[2018-11-13T21:49:16Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-2" for version 2
+
+[2018-11-13T21:49:16Z] [Normal] [Pod:eap-app-2-deploy]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-deploy to localhost
+
+[2018-11-13T21:49:17Z] [Normal] [Pod:eap-app-2-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+
+[2018-11-13T21:49:17Z] [Normal] [Pod:eap-app-2-deploy]: (Created) Created container
+
+[2018-11-13T21:49:17Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-gpghv
+
+[2018-11-13T21:49:18Z] [Normal] [Pod:eap-app-2-deploy]: (Started) Started container
+
+[2018-11-13T21:49:21Z] [Normal] [Pod:eap-app-1-gpghv]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+
+[2018-11-13T21:49:22Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-qdxbx
+
+[2018-11-13T21:49:22Z] [Normal] [Pod:eap-app-2-qdxbx]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-qdxbx to localhost
+
+[2018-11-13T21:49:23Z] [Normal] [Pod:eap-app-2-qdxbx]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:49:23Z] [Normal] [Pod:eap-app-2-qdxbx]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:49:24Z] [Normal] [Pod:eap-app-2-qdxbx]: (Created) Created container
+
+[2018-11-13T21:49:24Z] [Normal] [Pod:eap-app-2-qdxbx]: (Started) Started container
+
+Scaling to: 2
+[2018-11-13T21:49:52Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-2" from 1 to 2
+
+[2018-11-13T21:49:52Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-52fq9
+
+[2018-11-13T21:49:52Z] [Normal] [Pod:eap-app-2-52fq9]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-52fq9 to localhost
+
+[2018-11-13T21:49:53Z] [Normal] [Pod:eap-app-2-52fq9]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:49:53Z] [Normal] [Pod:eap-app-2-52fq9]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:49:53Z] [Normal] [Pod:eap-app-2-52fq9]: (Created) Created container
+
+[2018-11-13T21:49:54Z] [Normal] [Pod:eap-app-2-52fq9]: (Started) Started container
+
+Total Pods: 2
+Pod: eap-app-2-52fq9
+Pod: eap-app-2-qdxbx
+ServletURL: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-2-52fq9:8080/proxy/cluster1/StoreInSession
+Response: OK
+Cookie: JSESSIONID=xtiLFpHim-9g6Ulh4ZQ-ZzHHJRuPjxAvXpLeh913.eap-app-2-52fq9; path=/cluster1
+RetrieveURL: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-2-qdxbx:8080/proxy/cluster1/StoreInSession
+Scaling to: 3
+[2018-11-13T21:50:06Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) (combined from similar events): Scaled replication controller "eap-app-2" from 2 to 3
+
+[2018-11-13T21:50:06Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-z9lkv
+
+[2018-11-13T21:50:06Z] [Normal] [Pod:eap-app-2-z9lkv]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-z9lkv to localhost
+
+[2018-11-13T21:50:06Z] [Normal] [Pod:eap-app-2-z9lkv]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:50:06Z] [Normal] [Pod:eap-app-2-z9lkv]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+
+[2018-11-13T21:50:07Z] [Normal] [Pod:eap-app-2-z9lkv]: (Created) Created container
+
+[2018-11-13T21:50:07Z] [Normal] [Pod:eap-app-2-z9lkv]: (Started) Started container
+
+Total Pods: 3
+Pod: eap-app-2-52fq9
+Pod: eap-app-2-qdxbx
+Pod: eap-app-2-z9lkv
+RetrieveURL: https://127.0.0.1:8443/api/v1/namespaces/test-arq-eap72-7a5addcd/pods/eap-app-2-z9lkv:8080/proxy/cluster1/StoreInSession
+]]></system-out>
+    <system-err><![CDATA[Nov 13, 2018 3:49:10 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor createOpenShiftResource
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method public void org.jboss.test.arquillian.ce.common.EapClusteringTestBase.testSessionWithProxy() throws java.lang.Exception
+Nov 13, 2018 3:49:10 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier applyKubernetesResourcesAtMethodScope
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method testSessionWithProxy
+Nov 13, 2018 3:49:11 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1], timeout: 600s, check period: 4000ms
+Nov 13, 2018 3:49:15 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1 (pods: [eap-app-1-gpghv])
+Nov 13, 2018 3:49:15 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1] is ready.
+Nov 13, 2018 3:49:16 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [org.arquillian.cube.openshift.impl.fabric8.F8OpenShiftAdapter$1@3bed1a0b], timeout: 600s, check period: 3000ms
+Nov 13, 2018 3:49:52 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [org.arquillian.cube.openshift.impl.fabric8.F8OpenShiftAdapter$1@3bed1a0b] is ready.
+Nov 13, 2018 3:49:52 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 2], timeout: 600s, check period: 4000ms
+Nov 13, 2018 3:50:04 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 2 (pods: [eap-app-2-52fq9, eap-app-2-qdxbx])
+Nov 13, 2018 3:50:04 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 2] is ready.
+Nov 13, 2018 3:50:05 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 3], timeout: 600s, check period: 4000ms
+Nov 13, 2018 3:52:50 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 3 (pods: [eap-app-2-52fq9, eap-app-2-qdxbx, eap-app-2-z9lkv])
+Nov 13, 2018 3:52:50 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 3] is ready.
+Nov 13, 2018 3:52:50 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor deleteOpenShiftResource
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method testSessionWithProxy
+Nov 13, 2018 3:52:50 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier removeKubernetesResourcesAtMethodScope
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72ClusteringTest method testSessionWithProxy
+]]></system-err>
+  </testcase>
+</testsuite>

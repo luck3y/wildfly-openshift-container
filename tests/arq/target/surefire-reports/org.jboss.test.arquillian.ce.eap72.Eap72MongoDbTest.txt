@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.test.arquillian.ce.eap72.Eap72MongoDbTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 163.88 s - in org.jboss.test.arquillian.ce.eap72.Eap72MongoDbTest

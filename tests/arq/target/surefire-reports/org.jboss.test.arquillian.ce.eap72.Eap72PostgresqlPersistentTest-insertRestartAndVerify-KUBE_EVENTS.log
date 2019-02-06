@@ -1,0 +1,62 @@
+[2018-11-13T00:42:17Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-postgresql-1" from 1 to 0
+[2018-11-13T00:42:17Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-xvnfc
+[2018-11-13T00:42:22Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-postgresql-1" from 0 to 1
+[2018-11-13T00:42:22Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-rplvz
+[2018-11-13T00:42:22Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Scheduled) Successfully assigned test-arq-eap72-a4705e20/eap-app-postgresql-1-rplvz to localhost
+[2018-11-13T00:42:23Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T00:42:24Z] [Warning] [Pod:eap-app-postgresql-1-xvnfc]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: FATAL:  the database system is shutting down
+
+[2018-11-13T00:42:25Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T00:42:26Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Created) Created container
+[2018-11-13T00:42:26Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Started) Started container
+[2018-11-13T00:42:34Z] [Warning] [Pod:eap-app-postgresql-1-xvnfc]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: FATAL:  the database system is shutting down
+
+[2018-11-13T00:42:43Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:42:43Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-8lqf5
+[2018-11-13T00:42:44Z] [Warning] [Pod:eap-app-postgresql-1-xvnfc]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: FATAL:  the database system is shutting down
+
+[2018-11-13T00:42:46Z] [Normal] [Pod:eap-app-postgresql-1-xvnfc]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-13T00:42:46Z] [Warning] [Pod:eap-app-1-8lqf5]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T00:42:46Z] [Normal] [Pod:eap-app-1-8lqf5]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:42:49Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T00:42:49Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-k4lnj
+[2018-11-13T00:42:49Z] [Normal] [Pod:eap-app-1-k4lnj]: (Scheduled) Successfully assigned test-arq-eap72-a4705e20/eap-app-1-k4lnj to localhost
+[2018-11-13T00:42:49Z] [Normal] [Pod:eap-app-1-k4lnj]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-a4705e20/eap-app@sha256:95559648a857a3984d5f240ca9b84b384396614106c9a0c4c2c7aa1dc5e84517"
+[2018-11-13T00:42:49Z] [Normal] [Pod:eap-app-1-k4lnj]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-a4705e20/eap-app@sha256:95559648a857a3984d5f240ca9b84b384396614106c9a0c4c2c7aa1dc5e84517"
+[2018-11-13T00:42:49Z] [Normal] [Pod:eap-app-1-k4lnj]: (Created) Created container
+[2018-11-13T00:42:50Z] [Normal] [Pod:eap-app-1-k4lnj]: (Started) Started container
+[2018-11-13T21:14:15Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-postgresql-1" from 1 to 0
+[2018-11-13T21:14:15Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-bhls7
+[2018-11-13T21:14:20Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-postgresql-1" from 0 to 1
+[2018-11-13T21:14:20Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-c5bzb
+[2018-11-13T21:14:20Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-postgresql-1-c5bzb to localhost
+[2018-11-13T21:14:20Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T21:14:23Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T21:14:23Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Created) Created container
+[2018-11-13T21:14:23Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Started) Started container
+[2018-11-13T21:14:24Z] [Warning] [Pod:eap-app-postgresql-1-bhls7]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: FATAL:  the database system is shutting down
+
+[2018-11-13T21:14:33Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T21:14:33Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-tk79h
+[2018-11-13T21:14:34Z] [Warning] [Pod:eap-app-postgresql-1-bhls7]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: FATAL:  the database system is shutting down
+
+[2018-11-13T21:14:36Z] [Normal] [Pod:eap-app-postgresql-1-bhls7]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-13T21:14:36Z] [Warning] [Pod:eap-app-1-tk79h]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T21:14:36Z] [Normal] [Pod:eap-app-1-tk79h]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:14:38Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T21:14:38Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-9mfp8
+[2018-11-13T21:14:38Z] [Normal] [Pod:eap-app-1-9mfp8]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-1-9mfp8 to localhost
+[2018-11-13T21:14:38Z] [Normal] [Pod:eap-app-1-9mfp8]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-94947d52/eap-app@sha256:ba10646b51f7d96f14ec3f9c21ebac82c5d56551ff623ded5f040186dc75b122"
+[2018-11-13T21:14:39Z] [Normal] [Pod:eap-app-1-9mfp8]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-94947d52/eap-app@sha256:ba10646b51f7d96f14ec3f9c21ebac82c5d56551ff623ded5f040186dc75b122"
+[2018-11-13T21:14:39Z] [Normal] [Pod:eap-app-1-9mfp8]: (Created) Created container
+[2018-11-13T21:14:40Z] [Normal] [Pod:eap-app-1-9mfp8]: (Started) Started container

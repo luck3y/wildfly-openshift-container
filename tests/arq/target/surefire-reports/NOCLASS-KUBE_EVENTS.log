@@ -1,0 +1,370 @@
+[2018-11-12T19:02:09Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-12T19:02:10Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T19:02:10Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T20:41:22Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-s9nlv
+[2018-11-12T20:41:23Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T20:41:23Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T20:41:25Z] [Warning] [Pod:eap-app-1-s9nlv]: (Unhealthy) Liveness probe failed: 
+[2018-11-12T20:41:26Z] [Normal] [Pod:eap-app-1-s9nlv]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T21:23:33Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-12T21:23:34Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T21:23:34Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-25c15c54/eap-app-1-deploy to localhost
+[2018-11-12T21:23:35Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T21:23:35Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T21:23:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T21:23:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T21:23:36Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T22:42:03Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:42:03Z] [Warning] [DeploymentConfig:eap-app]: (ReplicationControllerScaleFailed) Failed to scale replication controler "eap-app-1" from 1 to 0: error while deploymentConfigController claiming the replication controller test-arq-eap72-4db15381/eap-app-1: can't adopt ReplicationController test-arq-eap72-4db15381/eap-app-1 (07860bc9-e6cc-11e8-ba3b-c85b76aab2ff): test-arq-eap72-4db15381/eap-app has just been deleted at 2018-11-12 22:42:02 +0000 UTC
+[2018-11-12T22:42:03Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:42:03Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-t4bbb
+[2018-11-12T22:42:08Z] [Warning] [Pod:eap-app-1-t4bbb]: (Unhealthy) Liveness probe failed: 
+[2018-11-12T22:42:08Z] [Normal] [Pod:eap-app-1-t4bbb]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T22:51:28Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-bt482
+[2018-11-12T22:51:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:51:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:51:32Z] [Warning] [Pod:eap-app-1-bt482]: (Unhealthy) Liveness probe failed: 
+[2018-11-12T22:51:32Z] [Normal] [Pod:eap-app-1-bt482]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T22:53:02Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-12T22:53:02Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T22:53:03Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-d6d87dfd/eap-app-1-deploy to localhost
+[2018-11-12T22:53:04Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:53:04Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:53:04Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T22:53:04Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T22:53:05Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T22:57:31Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T22:57:31Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-wf2ww
+[2018-11-12T22:57:31Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:57:31Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:57:35Z] [Normal] [Pod:eap-app-1-wf2ww]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T22:59:27Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-12T22:59:27Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T22:59:28Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-b300a776/eap-app-1-deploy to localhost
+[2018-11-12T22:59:28Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T22:59:28Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T22:59:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:59:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T22:59:29Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-4gxdb
+[2018-11-12T22:59:29Z] [Normal] [Pod:eap-app-1-4gxdb]: (Scheduled) Successfully assigned test-arq-eap72-b300a776/eap-app-1-4gxdb to localhost
+[2018-11-12T22:59:29Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T22:59:30Z] [Normal] [Pod:eap-app-1-4gxdb]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-b300a776/eap-app@sha256:3206f4cb5beb0f5a1f71d7ada39f9e18fbb876fdcb289eed2268ba5f164b7617"
+[2018-11-12T22:59:30Z] [Normal] [Pod:eap-app-1-4gxdb]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-b300a776/eap-app@sha256:3206f4cb5beb0f5a1f71d7ada39f9e18fbb876fdcb289eed2268ba5f164b7617"
+[2018-11-12T22:59:30Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-4gxdb
+[2018-11-12T22:59:30Z] [Normal] [Pod:eap-app-1-4gxdb]: (Created) Created container
+[2018-11-12T22:59:31Z] [Normal] [Pod:eap-app-1-4gxdb]: (Started) Started container
+[2018-11-12T22:59:32Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-jr6wn
+[2018-11-12T22:59:32Z] [Normal] [Pod:eap-app-mongodb-1-jr6wn]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-12T23:02:15Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:02:15Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:02:15Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T23:02:15Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-4shs7
+[2018-11-12T23:02:20Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-hzrdp
+[2018-11-12T23:02:20Z] [Normal] [Pod:eap-app-mongodb-1-hzrdp]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-12T23:02:21Z] [Normal] [Pod:eap-app-1-4shs7]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T23:07:17Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T23:07:17Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-t2wh6
+[2018-11-12T23:07:17Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:07:17Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:07:19Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-25k46
+[2018-11-12T23:07:20Z] [Normal] [Pod:eap-app-1-t2wh6]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T23:07:22Z] [Warning] [Pod:eap-app-mysql-1-25k46]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-12T23:09:12Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-12T23:09:12Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T23:09:12Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-85830df4/eap-app-1-deploy to localhost
+[2018-11-12T23:09:13Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:09:13Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:09:13Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:09:13Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T23:09:14Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-dzdlq
+[2018-11-12T23:09:14Z] [Normal] [Pod:eap-app-1-dzdlq]: (Scheduled) Successfully assigned test-arq-eap72-85830df4/eap-app-1-dzdlq to localhost
+[2018-11-12T23:09:14Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T23:09:15Z] [Normal] [Pod:eap-app-1-dzdlq]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-85830df4/eap-app@sha256:ce2714026e21e59fbbcb08118c0633109b2d83cbeb34c9c5a67fc09639c0e1cc"
+[2018-11-12T23:09:15Z] [Normal] [Pod:eap-app-1-dzdlq]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-85830df4/eap-app@sha256:ce2714026e21e59fbbcb08118c0633109b2d83cbeb34c9c5a67fc09639c0e1cc"
+[2018-11-12T23:09:15Z] [Normal] [Pod:eap-app-1-dzdlq]: (Created) Created container
+[2018-11-12T23:09:15Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-dzdlq
+[2018-11-12T23:09:15Z] [Normal] [Pod:eap-app-1-dzdlq]: (Started) Started container
+[2018-11-12T23:09:17Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-5rdsw
+[2018-11-12T23:09:18Z] [Warning] [Pod:eap-app-mysql-1-5rdsw]: (Unhealthy) Liveness probe failed: dial tcp 172.17.0.14:3306: connect: connection refused
+[2018-11-12T23:09:19Z] [Normal] [Pod:eap-app-mysql-1-5rdsw]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-12T23:10:47Z] [Warning] [Pod:testrunner]: (Unhealthy) Readiness probe failed: rpc error: code = 2 desc = oci runtime error: exec failed: container_linux.go:247: starting container process caused "process_linux.go:83: executing setns process caused \"exit status 15\""
+
+
+[2018-11-12T23:10:48Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:10:48Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:10:48Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-12T23:10:51Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-jj22x
+[2018-11-12T23:10:51Z] [Normal] [Pod:eap-app-postgresql-1-jj22x]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-12T23:12:32Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-12T23:12:33Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T23:12:33Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-37231c3c/eap-app-1-deploy to localhost
+[2018-11-12T23:12:34Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:12:34Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T23:12:34Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:12:34Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:12:34Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T23:12:35Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-dzh5n
+[2018-11-12T23:12:35Z] [Normal] [Pod:eap-app-1-dzh5n]: (Scheduled) Successfully assigned test-arq-eap72-37231c3c/eap-app-1-dzh5n to localhost
+[2018-11-12T23:12:35Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-dzh5n
+[2018-11-12T23:12:36Z] [Normal] [Pod:eap-app-1-dzh5n]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-37231c3c/eap-app@sha256:f2e4c32db5243c5d1d911edd577f0ea5aa25eef2d92367a84209266a299bab3a"
+[2018-11-12T23:12:36Z] [Normal] [Pod:eap-app-1-dzh5n]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-37231c3c/eap-app@sha256:f2e4c32db5243c5d1d911edd577f0ea5aa25eef2d92367a84209266a299bab3a"
+[2018-11-12T23:12:36Z] [Normal] [Pod:eap-app-1-dzh5n]: (Created) Created container
+[2018-11-12T23:12:37Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-xxbdt
+[2018-11-12T23:12:37Z] [Normal] [Pod:eap-app-1-dzh5n]: (Started) Started container
+[2018-11-12T23:12:37Z] [Normal] [Pod:eap-app-postgresql-1-xxbdt]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-12T23:21:59Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T23:21:59Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-hksfh
+[2018-11-12T23:21:59Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:21:59Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:22:02Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-vjp2d
+[2018-11-12T23:22:02Z] [Normal] [Pod:eap-app-mongodb-1-vjp2d]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-12T23:22:02Z] [Normal] [Pod:eap-app-1-hksfh]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T23:25:35Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T23:25:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:25:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:25:35Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-zxzvd
+[2018-11-12T23:25:38Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-54bbt
+[2018-11-12T23:25:39Z] [Normal] [Pod:eap-app-postgresql-1-54bbt]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-12T23:25:39Z] [Normal] [Pod:eap-app-1-zxzvd]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T23:57:22Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:57:22Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-12T23:57:22Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T23:57:22Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-wz96h
+[2018-11-12T23:57:26Z] [Normal] [Pod:eap-app-1-wz96h]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:06:45Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:06:45Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-hsjzq
+[2018-11-13T00:06:45Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:06:45Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:06:48Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-6wqf9
+[2018-11-13T00:06:48Z] [Warning] [Pod:eap-app-mongodb-1-6wqf9]: (Unhealthy) Liveness probe failed: dial tcp 172.17.0.11:27017: connect: connection refused
+[2018-11-13T00:06:48Z] [Normal] [Pod:eap-app-mongodb-1-6wqf9]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T00:06:49Z] [Normal] [Pod:eap-app-1-hsjzq]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:21:04Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-qhspj
+[2018-11-13T00:21:04Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:21:04Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:21:10Z] [Warning] [Pod:eap-app-1-qhspj]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T00:21:10Z] [Normal] [Pod:eap-app-1-qhspj]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:22:50Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T00:22:51Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T00:22:51Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-84619781/eap-app-1-deploy to localhost
+[2018-11-13T00:22:51Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:22:51Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:22:52Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T00:22:52Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T00:22:53Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-f4gcz
+[2018-11-13T00:22:53Z] [Normal] [Pod:eap-app-1-f4gcz]: (Scheduled) Successfully assigned test-arq-eap72-84619781/eap-app-1-f4gcz to localhost
+[2018-11-13T00:22:53Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T00:22:54Z] [Warning] [Pod:eap-app-1-f4gcz]: (FailedCreatePodSandBox) Failed create pod sandbox: rpc error: code = Unknown desc = failed to start sandbox container for pod "eap-app-1-f4gcz": Error response from daemon: oci runtime error: container_linux.go:247: starting container process caused "process_linux.go:339: running prestart hook 0 caused \"error running hook: exit status 1, stdout: , stderr: time=\\\"2018-11-12T18:22:54-06:00\\\" level=fatal msg=\\\"no such file or directory\\\" \\n\""
+[2018-11-13T00:26:53Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T00:26:54Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:26:54Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:32:03Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:32:03Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:32:04Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:32:04Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-tf877
+[2018-11-13T00:32:09Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-v96j5
+[2018-11-13T00:32:10Z] [Normal] [Pod:eap-app-mongodb-1-v96j5]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T00:32:11Z] [Normal] [Pod:eap-app-1-tf877]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:34:17Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T00:34:18Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T00:34:18Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-8973f0df/eap-app-1-deploy to localhost
+[2018-11-13T00:34:19Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:34:19Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:34:19Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T00:34:19Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T00:34:20Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-pljtt
+[2018-11-13T00:34:20Z] [Normal] [Pod:eap-app-1-pljtt]: (Scheduled) Successfully assigned test-arq-eap72-8973f0df/eap-app-1-pljtt to localhost
+[2018-11-13T00:34:20Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T00:34:20Z] [Normal] [Pod:eap-app-1-pljtt]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-8973f0df/eap-app@sha256:d6d1c03e8b135a05d0bacfb0e087b42d1b90d44c1a3e8dd49c92b602eb2a2f3d"
+[2018-11-13T00:34:20Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-pljtt
+[2018-11-13T00:34:20Z] [Normal] [Pod:eap-app-1-pljtt]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-8973f0df/eap-app@sha256:d6d1c03e8b135a05d0bacfb0e087b42d1b90d44c1a3e8dd49c92b602eb2a2f3d"
+[2018-11-13T00:34:21Z] [Normal] [Pod:eap-app-1-pljtt]: (Created) Created container
+[2018-11-13T00:34:21Z] [Normal] [Pod:eap-app-1-pljtt]: (Started) Started container
+[2018-11-13T00:34:22Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-sxl9g
+[2018-11-13T00:34:22Z] [Warning] [Pod:eap-app-mongodb-1-sxl9g]: (Unhealthy) Readiness probe failed: rpc error: code = 2 desc = oci runtime error: exec failed: cannot exec a container that has run and stopped
+
+
+[2018-11-13T00:34:22Z] [Normal] [Pod:eap-app-mongodb-1-sxl9g]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T00:34:24Z] [Normal] [Pod:eap-app-mongodb-1-sxl9g]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T00:38:01Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:38:01Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-chkr8
+[2018-11-13T00:38:02Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:38:02Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:38:04Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-c86mm
+[2018-11-13T00:38:04Z] [Normal] [Pod:eap-app-1-chkr8]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:38:04Z] [Warning] [Pod:eap-app-mysql-1-c86mm]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T00:38:05Z] [Normal] [Pod:eap-app-mysql-1-c86mm]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-13T00:43:29Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:43:29Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-k4lnj
+[2018-11-13T00:43:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:43:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:43:29Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T00:43:32Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+[2018-11-13T00:43:32Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-rplvz
+[2018-11-13T00:43:32Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Created) Created container
+[2018-11-13T00:43:32Z] [Normal] [Pod:eap-app-postgresql-1-rplvz]: (Started) Started container
+[2018-11-13T00:43:33Z] [Normal] [Pod:eap-app-1-k4lnj]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:46:06Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:46:06Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:46:06Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T00:46:06Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-4pb8c
+[2018-11-13T00:46:09Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-l8x9r
+[2018-11-13T00:46:10Z] [Warning] [Pod:eap-app-1-4pb8c]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T00:46:10Z] [Normal] [Pod:eap-app-postgresql-1-l8x9r]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-13T00:46:10Z] [Normal] [Pod:eap-app-1-4pb8c]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T17:54:28Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-jg7x2
+[2018-11-13T17:54:28Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T17:54:28Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T17:54:32Z] [Warning] [Pod:eap-app-1-jg7x2]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T17:54:32Z] [Normal] [Pod:eap-app-1-jg7x2]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T19:37:39Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T19:37:39Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-vjb8b
+[2018-11-13T19:37:39Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:37:39Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:37:42Z] [Warning] [Pod:eap-app-1-vjb8b]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T19:37:42Z] [Normal] [Pod:eap-app-1-vjb8b]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T19:41:53Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T19:41:53Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-hjb8b
+[2018-11-13T19:41:54Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:41:54Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:41:55Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-897vz
+[2018-11-13T19:41:56Z] [Normal] [Pod:eap-app-mongodb-1-897vz]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T19:41:56Z] [Normal] [Pod:eap-app-1-hjb8b]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T19:46:44Z] [Warning] [DeploymentConfig:eap-app]: (ReplicationControllerScaleFailed) Failed to scale replication controler "eap-app-1" from 1 to 0: error while deploymentConfigController claiming the replication controller test-arq-eap72-3c718c36/eap-app-1: can't adopt ReplicationController test-arq-eap72-3c718c36/eap-app-1 (b60298d6-e77c-11e8-a777-c85b76aab2ff): test-arq-eap72-3c718c36/eap-app has just been deleted at 2018-11-13 19:46:44 +0000 UTC
+[2018-11-13T19:46:44Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:46:44Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:46:45Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-69sw4
+[2018-11-13T19:46:47Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-cbvlw
+[2018-11-13T19:46:47Z] [Normal] [Pod:eap-app-mongodb-1-cbvlw]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T19:46:48Z] [Normal] [Pod:eap-app-1-69sw4]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T19:50:34Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T19:50:34Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-sgxsb
+[2018-11-13T19:50:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:50:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:50:36Z] [Normal] [DeploymentConfig:eap-app-mysql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mysql-1" from 1 to 0
+[2018-11-13T19:50:36Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-kpsrc
+[2018-11-13T19:50:37Z] [Normal] [Pod:eap-app-1-sgxsb]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T19:50:37Z] [Warning] [Pod:eap-app-mysql-1-kpsrc]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:50:39Z] [Normal] [Pod:eap-app-mysql-1-kpsrc]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-13T19:52:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:52:35Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T19:52:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:52:37Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-wc8t9
+[2018-11-13T19:52:38Z] [Normal] [Pod:eap-app-mysql-1-wc8t9]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-13T19:55:00Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T19:55:01Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:55:01Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:55:02Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-xh48b
+[2018-11-13T19:55:04Z] [Normal] [Pod:eap-app-mysql-1-xh48b]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-13T19:56:59Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T19:56:59Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:56:59Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T19:57:01Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-dm6sq
+[2018-11-13T19:57:02Z] [Normal] [Pod:eap-app-mysql-1-dm6sq]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-13T20:06:28Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T20:06:28Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T20:06:28Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-3352d1e1/eap-app-1-deploy to localhost
+[2018-11-13T20:06:29Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T20:06:29Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T20:06:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:06:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:06:30Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-thrdn
+[2018-11-13T20:06:30Z] [Normal] [Pod:eap-app-1-thrdn]: (Scheduled) Successfully assigned test-arq-eap72-3352d1e1/eap-app-1-thrdn to localhost
+[2018-11-13T20:06:30Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T20:06:30Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-thrdn
+[2018-11-13T20:06:31Z] [Normal] [Pod:eap-app-1-thrdn]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-3352d1e1/eap-app@sha256:b5733f369a00f96a1c9333d3131c03d0e053cdd90b55de5b65a71b3a037c84fd"
+[2018-11-13T20:06:31Z] [Normal] [Pod:eap-app-1-thrdn]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-3352d1e1/eap-app@sha256:b5733f369a00f96a1c9333d3131c03d0e053cdd90b55de5b65a71b3a037c84fd"
+[2018-11-13T20:06:31Z] [Normal] [Pod:eap-app-1-thrdn]: (Created) Created container
+[2018-11-13T20:06:32Z] [Normal] [Pod:eap-app-1-thrdn]: (Started) Started container
+[2018-11-13T20:06:32Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-p4n2p
+[2018-11-13T20:06:32Z] [Normal] [Pod:eap-app-postgresql-1-p4n2p]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-13T20:14:54Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T20:14:55Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T20:14:55Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-bdfcb76e/eap-app-1-deploy to localhost
+[2018-11-13T20:14:56Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T20:14:56Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:14:56Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:14:56Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T20:14:56Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-nls9v
+[2018-11-13T20:14:56Z] [Normal] [Pod:eap-app-1-nls9v]: (Scheduled) Successfully assigned test-arq-eap72-bdfcb76e/eap-app-1-nls9v to localhost
+[2018-11-13T20:14:57Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T20:14:57Z] [Normal] [Pod:eap-app-1-nls9v]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-bdfcb76e/eap-app@sha256:112392a465d292765c8e4aa3b8d5bd53cbbcf7c652e60d326e8ffa02924fc128"
+[2018-11-13T20:14:57Z] [Normal] [Pod:eap-app-1-nls9v]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-bdfcb76e/eap-app@sha256:112392a465d292765c8e4aa3b8d5bd53cbbcf7c652e60d326e8ffa02924fc128"
+[2018-11-13T20:14:57Z] [Normal] [Pod:eap-app-1-nls9v]: (Created) Created container
+[2018-11-13T20:14:59Z] [Normal] [Pod:eap-app-1-nls9v]: (Started) Started container
+[2018-11-13T20:23:30Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T20:23:30Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T20:23:30Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-79dc4a34/eap-app-1-deploy to localhost
+[2018-11-13T20:23:31Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T20:23:32Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:23:32Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:23:32Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T20:23:33Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T20:33:12Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T20:33:13Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T20:33:13Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-e83b38cc/eap-app-1-deploy to localhost
+[2018-11-13T20:33:14Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T20:33:14Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T20:33:14Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:33:14Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:33:15Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T20:45:33Z] [Normal] [Pod:eap-app-1-build]: (Killing) Killing container with id docker://sti-build:Need to kill Pod
+[2018-11-13T20:45:34Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T20:45:34Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-37cd1fc0/eap-app-1-deploy to localhost
+[2018-11-13T20:45:35Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T20:45:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:45:35Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T20:45:35Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T20:45:36Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T21:07:29Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-nmx2s
+[2018-11-13T21:07:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:07:29Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:07:32Z] [Normal] [Pod:eap-app-1-nmx2s]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:11:30Z] [Warning] [DeploymentConfig:eap-app]: (ReplicationControllerScaleFailed) Failed to scale replication controler "eap-app-1" from 1 to 0: error while deploymentConfigController claiming the replication controller test-arq-eap72-cb1ac47e/eap-app-1: can't adopt ReplicationController test-arq-eap72-cb1ac47e/eap-app-1 (8f922ca2-e788-11e8-861b-c85b76aab2ff): can't recheck DeletionTimestamp: deploymentconfigs.apps.openshift.io "eap-app" not found
+[2018-11-13T21:11:30Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:11:30Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:11:31Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-dtlxd
+[2018-11-13T21:11:32Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-jtq9j
+[2018-11-13T21:11:34Z] [Normal] [Pod:eap-app-1-dtlxd]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:15:18Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T21:15:18Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-9mfp8
+[2018-11-13T21:15:18Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:15:18Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:15:20Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-c5bzb
+[2018-11-13T21:15:21Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-13T21:15:21Z] [Normal] [Pod:eap-app-1-9mfp8]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:18:02Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T21:18:02Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-b9jzr
+[2018-11-13T21:18:03Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:18:03Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:18:06Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-jbhzt
+[2018-11-13T21:18:06Z] [Normal] [Pod:eap-app-postgresql-1-jbhzt]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+[2018-11-13T21:18:06Z] [Normal] [Pod:eap-app-1-b9jzr]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:21:56Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T21:21:56Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-tstzt
+[2018-11-13T21:21:57Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:21:57Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:21:59Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-29qq6
+[2018-11-13T21:21:59Z] [Normal] [Pod:eap-app-mongodb-1-29qq6]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T21:22:00Z] [Normal] [Pod:eap-app-1-tstzt]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:28:15Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulDelete) Deleted pod: eap-app-2-75tr5
+[2018-11-13T21:28:15Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulDelete) Deleted pod: eap-app-2-968s2
+[2018-11-13T21:28:15Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulDelete) Deleted pod: eap-app-2-xm66s
+[2018-11-13T21:28:15Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:28:15Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:28:19Z] [Normal] [Pod:eap-app-2-75tr5]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:52:52Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:52:52Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+[2018-11-13T21:52:53Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulDelete) Deleted pod: eap-app-2-52fq9
+[2018-11-13T21:52:53Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulDelete) Deleted pod: eap-app-2-qdxbx
+[2018-11-13T21:52:53Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulDelete) Deleted pod: eap-app-2-z9lkv
+[2018-11-13T21:53:00Z] [Normal] [Pod:eap-app-2-z9lkv]: (Killing) Killing container with id docker://eap-app:Need to kill Pod

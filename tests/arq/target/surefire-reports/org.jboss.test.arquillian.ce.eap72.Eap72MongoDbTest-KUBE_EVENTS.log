@@ -1,0 +1,110 @@
+[2018-11-12T22:59:45Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-eace3403/testrunner to localhost
+[2018-11-12T22:59:46Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-eace3403/eap-app-1-build to localhost
+[2018-11-12T22:59:47Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T22:59:47Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T22:59:47Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T22:59:48Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T22:59:49Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-eace3403/eap-app-1 is now running
+[2018-11-12T22:59:51Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T22:59:52Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T22:59:52Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T22:59:52Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T22:59:53Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T22:59:53Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T22:59:54Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T22:59:54Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T22:59:55Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T23:00:13Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (DeploymentCreated) Created new replication controller "eap-app-mongodb-1" for version 1
+[2018-11-12T23:00:13Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-eace3403/eap-app-mongodb-1-deploy to localhost
+[2018-11-12T23:00:14Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:00:14Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Created) Created container
+[2018-11-12T23:00:14Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-hzrdp
+[2018-11-12T23:00:14Z] [Normal] [Pod:eap-app-mongodb-1-hzrdp]: (Scheduled) Successfully assigned test-arq-eap72-eace3403/eap-app-mongodb-1-hzrdp to localhost
+[2018-11-12T23:00:14Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Started) Started container
+[2018-11-12T23:00:15Z] [Normal] [Pod:eap-app-mongodb-1-hzrdp]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-12T23:00:17Z] [Normal] [Pod:eap-app-mongodb-1-hzrdp]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-12T23:00:18Z] [Normal] [Pod:eap-app-mongodb-1-hzrdp]: (Created) Created container
+[2018-11-12T23:00:18Z] [Normal] [Pod:eap-app-mongodb-1-hzrdp]: (Started) Started container
+[2018-11-12T23:00:24Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-12T23:01:16Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T23:01:16Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-eace3403/eap-app-1-deploy to localhost
+[2018-11-12T23:01:16Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-eace3403/eap-app-1 completed successfully
+[2018-11-12T23:01:17Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:01:17Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T23:01:17Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-4shs7
+[2018-11-12T23:01:17Z] [Normal] [Pod:eap-app-1-4shs7]: (Scheduled) Successfully assigned test-arq-eap72-eace3403/eap-app-1-4shs7 to localhost
+[2018-11-12T23:01:17Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T23:01:18Z] [Normal] [Pod:eap-app-1-4shs7]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-eace3403/eap-app@sha256:4309a0ce53c69507a409328631e9b0960e60e1f8f41154b5bcf93f67add65c77"
+[2018-11-12T23:01:18Z] [Normal] [Pod:eap-app-1-4shs7]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-eace3403/eap-app@sha256:4309a0ce53c69507a409328631e9b0960e60e1f8f41154b5bcf93f67add65c77"
+[2018-11-12T23:01:18Z] [Normal] [Pod:eap-app-1-4shs7]: (Created) Created container
+[2018-11-12T23:01:19Z] [Normal] [Pod:eap-app-1-4shs7]: (Started) Started container
+[2018-11-13T00:32:32Z] [Warning] [BuildConfig:eap-app]: (BuildConfigTriggerFailed) error triggering Build for BuildConfig test-arq-eap72-8973f0df/eap-app: Internal error occurred: build config test-arq-eap72-8973f0df/eap-app has already instantiated a build for imageid docker-registry.engineering.redhat.com/kwills/eap72-openshift@sha256:b3580b1962d7dc1975a41c41530b30a6de60e6b66d2b3010c205bbebfdd2a8d5
+[2018-11-13T00:32:32Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-8973f0df/eap-app-1-build to localhost
+[2018-11-13T00:32:32Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-8973f0df/testrunner to localhost
+[2018-11-13T00:32:34Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:32:34Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:32:34Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:32:34Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:32:35Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-8973f0df/eap-app-1 is now running
+[2018-11-13T00:32:38Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:32:39Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T00:32:40Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T00:32:40Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (DeploymentCreated) Created new replication controller "eap-app-mongodb-1" for version 1
+[2018-11-13T00:32:40Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-8973f0df/eap-app-mongodb-1-deploy to localhost
+[2018-11-13T00:32:41Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:32:41Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:32:41Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T00:32:41Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Created) Created container
+[2018-11-13T00:32:42Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:32:42Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-sxl9g
+[2018-11-13T00:32:42Z] [Normal] [Pod:eap-app-mongodb-1-sxl9g]: (Scheduled) Successfully assigned test-arq-eap72-8973f0df/eap-app-mongodb-1-sxl9g to localhost
+[2018-11-13T00:32:42Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Started) Started container
+[2018-11-13T00:32:43Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:32:43Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:32:43Z] [Normal] [Pod:eap-app-mongodb-1-sxl9g]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T00:32:44Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:32:45Z] [Normal] [Pod:eap-app-mongodb-1-sxl9g]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T00:32:46Z] [Normal] [Pod:eap-app-mongodb-1-sxl9g]: (Created) Created container
+[2018-11-13T00:32:47Z] [Normal] [Pod:eap-app-mongodb-1-sxl9g]: (Started) Started container
+[2018-11-13T00:32:53Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-13T19:44:14Z] [Warning] [BuildConfig:eap-app]: (BuildConfigTriggerFailed) error triggering Build for BuildConfig test-arq-eap72-3c718c36/eap-app: Internal error occurred: build config test-arq-eap72-3c718c36/eap-app has already instantiated a build for imageid docker-registry.engineering.redhat.com/kwills/eap72-openshift@sha256:b3580b1962d7dc1975a41c41530b30a6de60e6b66d2b3010c205bbebfdd2a8d5
+[2018-11-13T19:44:14Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-3c718c36/testrunner to localhost
+[2018-11-13T19:44:14Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-3c718c36/eap-app-1-build to localhost
+[2018-11-13T19:44:15Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:44:15Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:44:15Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:44:16Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:44:16Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-3c718c36/eap-app-1 is now running
+[2018-11-13T19:44:19Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:44:19Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:44:19Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (DeploymentCreated) Created new replication controller "eap-app-mongodb-1" for version 1
+[2018-11-13T19:44:19Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-3c718c36/eap-app-mongodb-1-deploy to localhost
+[2018-11-13T19:44:19Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:44:19Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T19:44:20Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:44:20Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T19:44:20Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Created) Created container
+[2018-11-13T19:44:20Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:44:20Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:44:20Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-cbvlw
+[2018-11-13T19:44:20Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T19:44:20Z] [Normal] [Pod:eap-app-mongodb-1-cbvlw]: (Scheduled) Successfully assigned test-arq-eap72-3c718c36/eap-app-mongodb-1-cbvlw to localhost
+[2018-11-13T19:44:21Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Started) Started container
+[2018-11-13T19:44:21Z] [Normal] [Pod:eap-app-mongodb-1-cbvlw]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T19:44:21Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:44:23Z] [Normal] [Pod:eap-app-mongodb-1-cbvlw]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T19:44:23Z] [Normal] [Pod:eap-app-mongodb-1-cbvlw]: (Created) Created container
+[2018-11-13T19:44:24Z] [Normal] [Pod:eap-app-mongodb-1-cbvlw]: (Started) Started container
+[2018-11-13T19:44:36Z] [Normal] [Pod:eap-app-mongodb-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-13T19:45:45Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T19:45:45Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-3c718c36/eap-app-1-deploy to localhost
+[2018-11-13T19:45:45Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-3c718c36/eap-app-1 completed successfully
+[2018-11-13T19:45:45Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T19:45:46Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T19:45:46Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-69sw4
+[2018-11-13T19:45:46Z] [Normal] [Pod:eap-app-1-69sw4]: (Scheduled) Successfully assigned test-arq-eap72-3c718c36/eap-app-1-69sw4 to localhost
+[2018-11-13T19:45:46Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T19:45:47Z] [Normal] [Pod:eap-app-1-69sw4]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-3c718c36/eap-app@sha256:65ffe88ecef32c395f727b6238498e52d862cd12a26c686c8795ae492adf56bf"
+[2018-11-13T19:45:47Z] [Normal] [Pod:eap-app-1-69sw4]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-3c718c36/eap-app@sha256:65ffe88ecef32c395f727b6238498e52d862cd12a26c686c8795ae492adf56bf"
+[2018-11-13T19:45:47Z] [Normal] [Pod:eap-app-1-69sw4]: (Created) Created container
+[2018-11-13T19:45:48Z] [Normal] [Pod:eap-app-1-69sw4]: (Started) Started container

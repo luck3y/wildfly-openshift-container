@@ -1,0 +1,135 @@
+[2018-11-12T21:29:26Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-bbbdbc34/testrunner to localhost
+[2018-11-12T21:29:26Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-bbbdbc34/eap-app-1-build to localhost
+[2018-11-12T21:29:26Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T21:29:27Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:29:27Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:29:27Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:29:28Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-bbbdbc34/eap-app-1 is now running
+[2018-11-12T21:29:32Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T21:29:35Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T21:29:35Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T21:29:38Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:29:38Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:29:39Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:29:39Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:29:39Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:29:40Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:41:14Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-c8c9785a/testrunner to localhost
+[2018-11-12T21:41:14Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-c8c9785a/eap-app-1-build to localhost
+[2018-11-12T21:41:15Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T21:41:15Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:41:15Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:41:16Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:41:16Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-c8c9785a/eap-app-1 is now running
+[2018-11-12T21:41:20Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T21:41:22Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T21:41:23Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T21:41:26Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:41:26Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:41:26Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:41:27Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:41:27Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:41:28Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:47:06Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-087f863b/testrunner to localhost
+[2018-11-12T21:47:06Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-087f863b/eap-app-1-build to localhost
+[2018-11-12T21:47:07Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T21:47:07Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:47:07Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:47:07Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:47:08Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-087f863b/eap-app-1 is now running
+[2018-11-12T21:47:12Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T21:47:14Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T21:47:14Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T21:47:16Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:47:16Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:47:17Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:47:17Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T21:47:17Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T21:47:18Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T21:50:07Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T21:50:07Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-087f863b/eap-app-1-deploy to localhost
+[2018-11-12T21:50:08Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T21:50:08Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T21:50:08Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-087f863b/eap-app-1 completed successfully
+[2018-11-12T21:50:08Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-xc8p7
+[2018-11-12T21:50:08Z] [Normal] [Pod:eap-app-1-xc8p7]: (Scheduled) Successfully assigned test-arq-eap72-087f863b/eap-app-1-xc8p7 to localhost
+[2018-11-12T21:50:08Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T21:50:09Z] [Normal] [Pod:eap-app-1-xc8p7]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-087f863b/eap-app@sha256:48dea7f14cce552924c52a8a2d8a8deadef57abfb15b7a5a40503534089112e1"
+[2018-11-12T21:50:09Z] [Normal] [Pod:eap-app-1-xc8p7]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-087f863b/eap-app@sha256:48dea7f14cce552924c52a8a2d8a8deadef57abfb15b7a5a40503534089112e1"
+[2018-11-12T21:50:09Z] [Normal] [Pod:eap-app-1-xc8p7]: (Created) Created container
+[2018-11-12T21:50:10Z] [Normal] [Pod:eap-app-1-xc8p7]: (Started) Started container
+[2018-11-12T21:50:35Z] [Normal] [Pod:eap-app-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-12T22:53:19Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-c17d0ec7/testrunner to localhost
+[2018-11-12T22:53:19Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-c17d0ec7/eap-app-1-build to localhost
+[2018-11-12T22:53:19Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T22:53:20Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T22:53:20Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T22:53:20Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T22:53:21Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-c17d0ec7/eap-app-1 is now running
+[2018-11-12T22:53:25Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T22:53:27Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T22:53:28Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T22:53:30Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T22:53:30Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T22:53:31Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T22:53:31Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T22:53:31Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T22:53:32Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T22:56:30Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-12T22:56:30Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-c17d0ec7/eap-app-1-deploy to localhost
+[2018-11-12T22:56:30Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-c17d0ec7/eap-app-1 completed successfully
+[2018-11-12T22:56:31Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T22:56:31Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-12T22:56:31Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-wf2ww
+[2018-11-12T22:56:31Z] [Normal] [Pod:eap-app-1-wf2ww]: (Scheduled) Successfully assigned test-arq-eap72-c17d0ec7/eap-app-1-wf2ww to localhost
+[2018-11-12T22:56:31Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-12T22:56:32Z] [Normal] [Pod:eap-app-1-wf2ww]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-c17d0ec7/eap-app@sha256:d1db3e90a7fa6ccc22955b2b1e51a74b7d7c0c9819f801622356f83a85f0515a"
+[2018-11-12T22:56:32Z] [Normal] [Pod:eap-app-1-wf2ww]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-c17d0ec7/eap-app@sha256:d1db3e90a7fa6ccc22955b2b1e51a74b7d7c0c9819f801622356f83a85f0515a"
+[2018-11-12T22:56:33Z] [Normal] [Pod:eap-app-1-wf2ww]: (Created) Created container
+[2018-11-12T22:56:33Z] [Normal] [Pod:eap-app-1-wf2ww]: (Started) Started container
+[2018-11-12T22:56:59Z] [Normal] [Pod:eap-app-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-13T00:23:13Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-e92af8e4/testrunner to localhost
+[2018-11-13T00:23:14Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-e92af8e4/eap-app-1-build to localhost
+[2018-11-13T00:23:15Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:23:15Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:23:15Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:23:15Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:23:16Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-e92af8e4/eap-app-1 is now running
+[2018-11-13T00:23:19Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:23:20Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T00:23:21Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T00:23:28Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:23:28Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:23:29Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:23:30Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:23:30Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:23:31Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:33:30Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/testrunner to localhost
+[2018-11-13T19:33:30Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/eap-app-1-build to localhost
+[2018-11-13T19:33:31Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:33:31Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:33:31Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:33:32Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:33:32Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-806ffe81/eap-app-1 is now running
+[2018-11-13T19:33:35Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:33:39Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T19:33:40Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T19:33:45Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:33:45Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:33:46Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:33:47Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:33:48Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:33:49Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:36:34Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-806ffe81/eap-app-1 completed successfully
+[2018-11-13T19:36:34Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T19:36:34Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/eap-app-1-deploy to localhost
+[2018-11-13T19:36:35Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T19:36:36Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T19:36:36Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-vjb8b
+[2018-11-13T19:36:36Z] [Normal] [Pod:eap-app-1-vjb8b]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/eap-app-1-vjb8b to localhost
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-vjb8b]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-806ffe81/eap-app@sha256:e149aa67a09a661f5dd291c05115d9003d850fa6ccdcd71377746f404b2909d2"
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-vjb8b]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-806ffe81/eap-app@sha256:e149aa67a09a661f5dd291c05115d9003d850fa6ccdcd71377746f404b2909d2"
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-vjb8b]: (Created) Created container
+[2018-11-13T19:36:38Z] [Normal] [Pod:eap-app-1-vjb8b]: (Started) Started container
+[2018-11-13T19:37:07Z] [Normal] [Pod:eap-app-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod

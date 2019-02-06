@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.jboss.test.arquillian.ce.eap72.Eap72BasicTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 260.532 s - in org.jboss.test.arquillian.ce.eap72.Eap72BasicTest

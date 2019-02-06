@@ -1,0 +1,24 @@
+schema_version: 1
+
+name: "jboss-eap-7-tech-preview/eap-cd-openshift"
+
+modules:
+      repositories:
+          - name: cct_module
+            git:
+                  url: https://github.com/luck3y/cct_module.git
+                  ref: fix_repos
+          - name: jboss-eap-modules
+            git:
+                  url: https://github.com/luck3y/jboss-eap-modules.git
+                  ref: fix_repos
+          - name: jboss-eap-7-image
+            git:
+                  url: https://github.com/luck3y/jboss-eap-7-image.git
+                  ref: fix_repos
+
+osbs:
+      repository:
+            name: containers/jboss-eap-7
+            branch: jb-eap-7.3-cd-dev-openshift-rhel-7
+

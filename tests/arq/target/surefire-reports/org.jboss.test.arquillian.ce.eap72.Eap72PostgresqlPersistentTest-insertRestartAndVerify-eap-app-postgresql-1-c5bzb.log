@@ -1,0 +1,12 @@
+pg_ctl: another server might be running; trying to start server anyway
+waiting for server to start....LOG:  redirecting log output to logging collector process
+HINT:  Future log output will appear in directory "pg_log".
+ done
+server started
+=> sourcing /usr/share/container-scripts/postgresql/start/set_passwords.sh ...
+ALTER ROLE
+waiting for server to shut down.... done
+server stopped
+Starting server...
+LOG:  redirecting log output to logging collector process
+HINT:  Future log output will appear in directory "pg_log".

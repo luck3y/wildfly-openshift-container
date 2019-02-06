@@ -1,0 +1,102 @@
+[2018-11-12T23:20:59Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 1 to 0
+[2018-11-12T23:20:59Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-rl4lw
+[2018-11-12T23:21:00Z] [Normal] [Pod:eap-app-mongodb-1-rl4lw]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-12T23:21:04Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 0 to 1
+[2018-11-12T23:21:04Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-vjp2d
+[2018-11-12T23:21:04Z] [Normal] [Pod:eap-app-mongodb-1-vjp2d]: (Scheduled) Successfully assigned test-arq-eap72-71052e0c/eap-app-mongodb-1-vjp2d to localhost
+[2018-11-12T23:21:05Z] [Normal] [Pod:eap-app-mongodb-1-vjp2d]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-12T23:21:07Z] [Normal] [Pod:eap-app-mongodb-1-vjp2d]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-12T23:21:08Z] [Normal] [Pod:eap-app-mongodb-1-vjp2d]: (Created) Created container
+[2018-11-12T23:21:08Z] [Normal] [Pod:eap-app-mongodb-1-vjp2d]: (Started) Started container
+[2018-11-12T23:21:13Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T23:21:13Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-bbrt8
+[2018-11-12T23:21:16Z] [Normal] [Pod:eap-app-1-bbrt8]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-12T23:21:18Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-12T23:21:18Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-hksfh
+[2018-11-12T23:21:18Z] [Normal] [Pod:eap-app-1-hksfh]: (Scheduled) Successfully assigned test-arq-eap72-71052e0c/eap-app-1-hksfh to localhost
+[2018-11-12T23:21:19Z] [Normal] [Pod:eap-app-1-hksfh]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-71052e0c/eap-app@sha256:0584b51388162673648ba4ef9ab153e2b66bbc92fa6fd3038de8a11ce46e4806"
+[2018-11-12T23:21:19Z] [Normal] [Pod:eap-app-1-hksfh]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-71052e0c/eap-app@sha256:0584b51388162673648ba4ef9ab153e2b66bbc92fa6fd3038de8a11ce46e4806"
+[2018-11-12T23:21:19Z] [Normal] [Pod:eap-app-1-hksfh]: (Created) Created container
+[2018-11-12T23:21:20Z] [Normal] [Pod:eap-app-1-hksfh]: (Started) Started container
+[2018-11-13T00:05:44Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 1 to 0
+[2018-11-13T00:05:44Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-nv2kr
+[2018-11-13T00:05:45Z] [Normal] [Pod:eap-app-mongodb-1-nv2kr]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T00:05:49Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 0 to 1
+[2018-11-13T00:05:49Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-6wqf9
+[2018-11-13T00:05:49Z] [Normal] [Pod:eap-app-mongodb-1-6wqf9]: (Scheduled) Successfully assigned test-arq-eap72-59651210/eap-app-mongodb-1-6wqf9 to localhost
+[2018-11-13T00:05:50Z] [Normal] [Pod:eap-app-mongodb-1-6wqf9]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T00:05:52Z] [Normal] [Pod:eap-app-mongodb-1-6wqf9]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T00:05:52Z] [Normal] [Pod:eap-app-mongodb-1-6wqf9]: (Created) Created container
+[2018-11-13T00:05:53Z] [Normal] [Pod:eap-app-mongodb-1-6wqf9]: (Started) Started container
+[2018-11-13T00:05:59Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:05:59Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-z2nww
+[2018-11-13T00:06:02Z] [Warning] [Pod:eap-app-1-z2nww]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T00:06:02Z] [Normal] [Pod:eap-app-1-z2nww]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:06:04Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T00:06:04Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-hsjzq
+[2018-11-13T00:06:04Z] [Normal] [Pod:eap-app-1-hsjzq]: (Scheduled) Successfully assigned test-arq-eap72-59651210/eap-app-1-hsjzq to localhost
+[2018-11-13T00:06:05Z] [Normal] [Pod:eap-app-1-hsjzq]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-59651210/eap-app@sha256:e45a7eb5a93fc77b6b0609b54f6a53e08707bdc46b9d93d9ac556e5744a4c1fc"
+[2018-11-13T00:06:05Z] [Normal] [Pod:eap-app-1-hsjzq]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-59651210/eap-app@sha256:e45a7eb5a93fc77b6b0609b54f6a53e08707bdc46b9d93d9ac556e5744a4c1fc"
+[2018-11-13T00:06:05Z] [Normal] [Pod:eap-app-1-hsjzq]: (Created) Created container
+[2018-11-13T00:06:06Z] [Normal] [Pod:eap-app-1-hsjzq]: (Started) Started container
+[2018-11-13T00:30:38Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 1 to 0
+[2018-11-13T00:30:38Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-glsmg
+[2018-11-13T00:30:39Z] [Normal] [Pod:eap-app-mongodb-1-glsmg]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T00:30:44Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 0 to 1
+[2018-11-13T00:30:44Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-v96j5
+[2018-11-13T00:30:44Z] [Normal] [Pod:eap-app-mongodb-1-v96j5]: (Scheduled) Successfully assigned test-arq-eap72-c69ee0ee/eap-app-mongodb-1-v96j5 to localhost
+[2018-11-13T00:30:45Z] [Normal] [Pod:eap-app-mongodb-1-v96j5]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T00:30:48Z] [Normal] [Pod:eap-app-mongodb-1-v96j5]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T00:30:48Z] [Normal] [Pod:eap-app-mongodb-1-v96j5]: (Created) Created container
+[2018-11-13T00:30:49Z] [Normal] [Pod:eap-app-mongodb-1-v96j5]: (Started) Started container
+[2018-11-13T00:31:07Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:31:07Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-7q29m
+[2018-11-13T00:31:12Z] [Warning] [Pod:eap-app-1-7q29m]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T00:31:13Z] [Normal] [Pod:eap-app-1-7q29m]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:31:14Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T00:31:14Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-tf877
+[2018-11-13T00:31:14Z] [Normal] [Pod:eap-app-1-tf877]: (Scheduled) Successfully assigned test-arq-eap72-c69ee0ee/eap-app-1-tf877 to localhost
+[2018-11-13T00:31:14Z] [Normal] [Pod:eap-app-1-tf877]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-c69ee0ee/eap-app@sha256:34315e2ecfecd2f2c7dc2ac56a8643340ff172e6c5591d79e1a6918a0da66ee2"
+[2018-11-13T00:31:14Z] [Normal] [Pod:eap-app-1-tf877]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-c69ee0ee/eap-app@sha256:34315e2ecfecd2f2c7dc2ac56a8643340ff172e6c5591d79e1a6918a0da66ee2"
+[2018-11-13T00:31:15Z] [Normal] [Pod:eap-app-1-tf877]: (Created) Created container
+[2018-11-13T00:31:15Z] [Normal] [Pod:eap-app-1-tf877]: (Started) Started container
+[2018-11-13T19:40:47Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 1 to 0
+[2018-11-13T19:40:47Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-fdmfg
+[2018-11-13T19:40:47Z] [Normal] [Pod:eap-app-mongodb-1-fdmfg]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T19:40:51Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 0 to 1
+[2018-11-13T19:40:51Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-897vz
+[2018-11-13T19:40:51Z] [Normal] [Pod:eap-app-mongodb-1-897vz]: (Scheduled) Successfully assigned test-arq-eap72-e3ba1f7e/eap-app-mongodb-1-897vz to localhost
+[2018-11-13T19:40:52Z] [Normal] [Pod:eap-app-mongodb-1-897vz]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T19:40:59Z] [Normal] [Pod:eap-app-mongodb-1-897vz]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T19:41:00Z] [Normal] [Pod:eap-app-mongodb-1-897vz]: (Created) Created container
+[2018-11-13T19:41:00Z] [Normal] [Pod:eap-app-mongodb-1-897vz]: (Started) Started container
+[2018-11-13T19:41:09Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T19:41:09Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-dcz6j
+[2018-11-13T19:41:11Z] [Normal] [Pod:eap-app-1-dcz6j]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T19:41:13Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T19:41:13Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-hjb8b
+[2018-11-13T19:41:13Z] [Normal] [Pod:eap-app-1-hjb8b]: (Scheduled) Successfully assigned test-arq-eap72-e3ba1f7e/eap-app-1-hjb8b to localhost
+[2018-11-13T19:41:14Z] [Normal] [Pod:eap-app-1-hjb8b]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-e3ba1f7e/eap-app@sha256:e54a96a7320b90b11d2f0c1532dc2a886914d053535543ddb1ff2423d07012f2"
+[2018-11-13T19:41:14Z] [Normal] [Pod:eap-app-1-hjb8b]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-e3ba1f7e/eap-app@sha256:e54a96a7320b90b11d2f0c1532dc2a886914d053535543ddb1ff2423d07012f2"
+[2018-11-13T19:41:14Z] [Normal] [Pod:eap-app-1-hjb8b]: (Created) Created container
+[2018-11-13T19:41:15Z] [Normal] [Pod:eap-app-1-hjb8b]: (Started) Started container
+[2018-11-13T21:20:49Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 1 to 0
+[2018-11-13T21:20:49Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulDelete) Deleted pod: eap-app-mongodb-1-5fqt4
+[2018-11-13T21:20:50Z] [Normal] [Pod:eap-app-mongodb-1-5fqt4]: (Killing) Killing container with id docker://eap-app-mongodb:Need to kill Pod
+[2018-11-13T21:20:54Z] [Normal] [DeploymentConfig:eap-app-mongodb]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mongodb-1" from 0 to 1
+[2018-11-13T21:20:54Z] [Normal] [ReplicationController:eap-app-mongodb-1]: (SuccessfulCreate) Created pod: eap-app-mongodb-1-29qq6
+[2018-11-13T21:20:54Z] [Normal] [Pod:eap-app-mongodb-1-29qq6]: (Scheduled) Successfully assigned test-arq-eap72-8102829c/eap-app-mongodb-1-29qq6 to localhost
+[2018-11-13T21:20:55Z] [Normal] [Pod:eap-app-mongodb-1-29qq6]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T21:20:57Z] [Normal] [Pod:eap-app-mongodb-1-29qq6]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mongodb-32-rhel7@sha256:a7e4774f6083af28f57726e12c520614092ccfb7e4ebc2e9baaf875f228691c9"
+[2018-11-13T21:20:57Z] [Normal] [Pod:eap-app-mongodb-1-29qq6]: (Created) Created container
+[2018-11-13T21:20:58Z] [Normal] [Pod:eap-app-mongodb-1-29qq6]: (Started) Started container
+[2018-11-13T21:21:11Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T21:21:11Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-b6s84
+[2018-11-13T21:21:14Z] [Normal] [Pod:eap-app-1-b6s84]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:21:16Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T21:21:16Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-tstzt
+[2018-11-13T21:21:16Z] [Normal] [Pod:eap-app-1-tstzt]: (Scheduled) Successfully assigned test-arq-eap72-8102829c/eap-app-1-tstzt to localhost
+[2018-11-13T21:21:17Z] [Normal] [Pod:eap-app-1-tstzt]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-8102829c/eap-app@sha256:f8d5b77a851e61df6f7f74fb90f1c94ecb6a671df91d01a80f4f930db07e85db"
+[2018-11-13T21:21:17Z] [Normal] [Pod:eap-app-1-tstzt]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-8102829c/eap-app@sha256:f8d5b77a851e61df6f7f74fb90f1c94ecb6a671df91d01a80f4f930db07e85db"
+[2018-11-13T21:21:17Z] [Normal] [Pod:eap-app-1-tstzt]: (Created) Created container
+[2018-11-13T21:21:18Z] [Normal] [Pod:eap-app-1-tstzt]: (Started) Started container

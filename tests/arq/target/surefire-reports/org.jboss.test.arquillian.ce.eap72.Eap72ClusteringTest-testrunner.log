@@ -1,0 +1,179 @@
+[0;33mWARN Configuration of an embedded messaging broker within the appserver is enabled but is not recommended. Support for such a configuration will be removed in a future release.[0m
+INFO If you are not configuring messaging destinations, to disable configuring an embedded messaging broker set the DISABLE_EMBEDDED_JMS_BROKER environment variable to true.
+Updated user 'admin' to file '/opt/eap/standalone/configuration/mgmt-users.properties'
+Updated user 'admin' to file '/opt/eap/domain/configuration/mgmt-users.properties'
+[0;33mWARN No password defined for JGroups cluster. AUTH protocol will be disabled. Please define JGROUPS_CLUSTER_PASSWORD.[0m
+[0;33mWARN Environment variable OPENSHIFT_DNS_PING_SERVICE_NAME undefined. Clustering will be unavailable. Please refer to the documentation for configuration.[0m
+INFO Configuring JGroups discovery protocol to openshift.DNS_PING
+INFO Configuring JGroups cluster traffic encryption protocol to SYM_ENCRYPT.
+[0;33mWARN Detected missing JGroups encryption configuration, the communication within the cluster WILL NOT be encrypted.[0m
+Using PicketBox SSL configuration.
+[0;33mWARN Missing SSO_URL. Unable to properly configure SSO-enabled applications[0m
+INFO Access log is disabled, ignoring configuration.
+INFO Running jboss-eap-7/eap72-openshift image, version 1.0
+-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseParallelOldGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:MaxMetaspaceSize=100m -XX:+ExitOnOutOfMemoryError
+=========================================================================
+  JBoss Bootstrap Environment
+  JBOSS_HOME: /opt/eap
+  JAVA: /usr/lib/jvm/java-1.8.0/bin/java
+  JAVA_OPTS:  -server -verbose:gc -Xloggc:/opt/eap/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.logmanager,jdk.nashorn.api,com.sun.crypto.provider -Djava.awt.headless=true -javaagent:/opt/jboss/container/jolokia/jolokia.jar=config=/opt/jboss/container/jolokia/etc/jolokia.properties -Xbootclasspath/p:/opt/eap/jboss-modules.jar:/opt/eap/modules/system/layers/base/org/jboss/logmanager/main/jboss-logmanager-2.1.5.Final-redhat-00001.jar:/opt/eap/modules/system/layers/base/org/glassfish/javax/json/main/javax.json-1.1.2.redhat-1.jar:/opt/eap/modules/system/layers/base/javax/json/api/main/javax.json-api-1.1.2.redhat-1.jar:/opt/eap/modules/system/layers/base/org/wildfly/common/main/wildfly-common-1.4.0.Final-redhat-1.jar -Djava.util.logging.manager=org.jboss.logmanager.LogManager -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseParallelOldGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:+ExitOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom  
+=========================================================================
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[0m21:39:47,393 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final-redhat-00001
+[0m[0m21:39:47,784 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.5.Final-redhat-00001
+[0m[0m21:39:47,796 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final-redhat-1
+[0m[0m21:39:48,100 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.2.0.GA (WildFly Core 6.0.11.Final-redhat-00001) starting
+[0m[32m21:39:48,101 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = ANSI_X3.4-1968
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/eap/jboss-modules.jar:/opt/jboss/container/jolokia/jolokia.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.security.egd = file:/dev/./urandom
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 172.17.0.6
+	jboss.bind.address.management = 127.0.0.1
+	jboss.bind.address.private = 172.17.0.6
+	jboss.home.dir = /opt/eap
+	jboss.host.name = testrunner
+	jboss.messaging.cluster.password = <redacted>
+	jboss.messaging.host = 172.17.0.6
+	jboss.modules.dir = /opt/eap/modules
+	jboss.modules.system.pkgs = org.jboss.logmanager,jdk.nashorn.api,com.sun.crypto.provider
+	jboss.node.name = testrunner
+	jboss.qualified.host.name = testrunner
+	jboss.server.base.dir = /opt/eap/standalone
+	jboss.server.config.dir = /opt/eap/standalone/configuration
+	jboss.server.data.dir = /opt/eap/standalone/data
+	jboss.server.deploy.dir = /opt/eap/standalone/data/content
+	jboss.server.log.dir = /opt/eap/standalone/log
+	jboss.server.name = testrunner
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/eap/standalone/tmp
+	line.separator = 
+	logging.configuration = file:/opt/eap/standalone/configuration/logging.properties
+	module.path = /opt/eap/modules
+	org.jboss.boot.log.file = /opt/eap/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.18.17-200.fc28.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/eap/jboss-modules.jar:/opt/eap/modules/system/layers/base/org/jboss/logmanager/main/jboss-logmanager-2.1.5.Final-redhat-00001.jar:/opt/eap/modules/system/layers/base/org/glassfish/javax/json/main/javax.json-1.1.2.redhat-1.jar:/opt/eap/modules/system/layers/base/javax/json/api/main/javax.json-api-1.1.2.redhat-1.jar:/opt/eap/modules/system/layers/base/org/wildfly/common/main/wildfly-common-1.4.0.Final-redhat-1.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/eap/jboss-modules.jar -mp /opt/eap/modules org.jboss.as.standalone -Djboss.home.dir=/opt/eap -Djboss.server.base.dir=/opt/eap/standalone -c standalone-openshift.xml -bmanagement 127.0.0.1 -b 172.17.0.6 -bprivate 172.17.0.6 -Djboss.node.name=testrunner -Djboss.messaging.host=172.17.0.6 -Djboss.messaging.cluster.password=HORNETQ_CLUSTER_PASSWORD
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = ANSI_X3.4-1968
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jboss
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = UTC
+[0m[32m21:39:48,102 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/opt/eap/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.logmanager,jdk.nashorn.api,com.sun.crypto.provider -Djava.awt.headless=true -javaagent:/opt/jboss/container/jolokia/jolokia.jar=config=/opt/jboss/container/jolokia/etc/jolokia.properties -Xbootclasspath/p:/opt/eap/jboss-modules.jar:/opt/eap/modules/system/layers/base/org/jboss/logmanager/main/jboss-logmanager-2.1.5.Final-redhat-00001.jar:/opt/eap/modules/system/layers/base/org/glassfish/javax/json/main/javax.json-1.1.2.redhat-1.jar:/opt/eap/modules/system/layers/base/javax/json/api/main/javax.json-api-1.1.2.redhat-1.jar:/opt/eap/modules/system/layers/base/org/wildfly/common/main/wildfly-common-1.4.0.Final-redhat-1.jar -Djava.util.logging.manager=org.jboss.logmanager.LogManager -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseParallelOldGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:+ExitOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dorg.jboss.boot.log.file=/opt/eap/standalone/log/server.log -Dlogging.configuration=file:/opt/eap/standalone/configuration/logging.properties 
+[0m[0m21:39:48,314 INFO  [stdout] (JolokiaStart) I> No access restrictor found, access to any MBean is allowed
+[0m[0m21:39:48,323 INFO  [stdout] (JolokiaStart) Jolokia: Agent started with URL https://172.17.0.6:8778/jolokia/
+[0m[0m21:39:48,969 INFO  [org.wildfly.security] (ServerService Thread Pool -- 29) ELY00001: WildFly Elytron version 1.6.1.Final-redhat-00001
+[0m[0m21:39:49,794 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m21:39:49,925 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m21:39:49,938 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.6.5.Final-redhat-00001
+[0m[0m21:39:49,944 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.6.5.Final-redhat-00001
+[0m[0m21:39:49,986 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m21:39:49,995 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 54) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.15
+[0m[0m21:39:50,005 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 60) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+[0m[0m21:39:50,014 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 61) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+[0m[0m21:39:50,019 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 50) WFLYIO001: Worker 'default' has auto-configured to 2 core threads with 16 task threads based on your 1 available processors
+[0m[0m21:39:50,022 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[0m21:39:50,032 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m21:39:50,034 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 63) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m21:39:50,034 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 69) WFLYSEC0002: Activating Security Subsystem
+[0m[0m21:39:50,042 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 51) WFLYRS0016: RESTEasy version 3.6.1.SP2-redhat-00001
+[0m[0m21:39:50,038 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 74) WFLYWS0002: Activating WebServices Extension
+[0m[0m21:39:50,049 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.8.Final-redhat-1
+[0m[0m21:39:50,057 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+[0m[0m21:39:50,081 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final-redhat-00001)
+[0m[0m21:39:50,094 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+[0m[0m21:39:50,118 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 9.2)
+[0m[0m21:39:50,134 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.15.Final-redhat-00001 starting
+[0m[0m21:39:50,170 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-3
+[0m[0m21:39:50,178 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = mysql
+[0m[0m21:39:50,179 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m21:39:50,187 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m21:39:50,193 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = postgresql
+[0m[0m21:39:50,233 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0014: Creating file handler for path '/opt/eap/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m21:39:50,241 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+[0m[0m21:39:50,279 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 16 (per class), which is derived from thread worker pool sizing.
+[0m[0m21:39:50,282 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 4 (per class), which is derived from the number of CPUs on this host.
+[0m[0m21:39:50,303 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m21:39:50,366 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+[0m[0m21:39:50,391 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+[0m[0m21:39:50,412 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow AJP listener ajp listening on 0.0.0.0:8009
+[0m[0m21:39:50,431 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+[0m[0m21:39:50,436 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000001: Initializing mod_cluster version 1.4.0.Final-redhat-1
+[0m[0m21:39:50,442 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+[0m[0m21:39:50,446 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+[0m[0m21:39:50,507 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m21:39:50,535 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+[0m[0m21:39:50,546 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0075: AIO wasn't located on this platform, it will fall back to using pure Java NIO. Your platform is Linux, install LibAIO to enable the AIO journal and achieve optimal performance.
+[0m[0m21:39:50,592 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/eap/standalone/deployments
+[0m[0m21:39:50,641 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.2.4.Final-redhat-00001 (Apache CXF 3.2.5.redhat-00001) 
+[0m[0m21:39:50,640 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/opt/eap/standalone/data/activemq/journal,bindingsDirectory=/opt/eap/standalone/data/activemq/bindings,largeMessagesDirectory=/opt/eap/standalone/data/activemq/largemessages,pagingDirectory=/opt/eap/standalone/data/activemq/paging)
+[0m[0m21:39:50,679 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221013: Using NIO Journal
+[0m[0m21:39:50,750 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 655,360,000
+[0m[0m21:39:50,768 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+[0m[0m21:39:50,769 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+[0m[0m21:39:50,803 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221034: Waiting indefinitely to obtain live lock
+[0m[0m21:39:50,803 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221035: Live Server Obtained live lock
+[0m[0m21:39:51,249 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m21:39:51,249 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m21:39:51,251 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+[0m[0m21:39:51,251 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+[0m[0m21:39:51,382 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221007: Server is now live
+[0m[0m21:39:51,382 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 76) AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.3.redhat-00012 [default, nodeID=a64b2411-e78c-11e8-9c15-0242ac110006] 
+[0m[0m21:39:51,408 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 76) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+[0m[0m21:39:51,417 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+[0m[0m21:39:51,498 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0007: Registered connection factory java:/JmsXA
+[0m[0m21:39:51,507 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m21:39:51,520 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 78) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+[0m[0m21:39:51,578 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-1) AMQ151007: Resource adaptor started
+[0m[0m21:39:51,579 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-1) IJ020002: Deployed: file://RaActivatoractivemq-ra
+[0m[0m21:39:51,584 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+[0m[0m21:39:51,584 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+[0m[0m21:39:51,651 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m21:39:51,659 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m21:39:51,659 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+[0m[0m21:39:51,659 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.2.0.GA (WildFly Core 6.0.11.Final-redhat-00001) started in 4590ms - Started 350 of 696 services (472 services are lazy, passive or on-demand)

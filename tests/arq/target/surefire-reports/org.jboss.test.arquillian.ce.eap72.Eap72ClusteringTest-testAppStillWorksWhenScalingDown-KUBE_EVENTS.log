@@ -1,0 +1,78 @@
+[2018-11-13T21:24:06Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 5
+[2018-11-13T21:24:06Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-fcj45
+[2018-11-13T21:24:06Z] [Normal] [Pod:eap-app-1-fcj45]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-1-fcj45 to localhost
+[2018-11-13T21:24:06Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-fmvlx
+[2018-11-13T21:24:06Z] [Normal] [Pod:eap-app-1-fmvlx]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-1-fmvlx to localhost
+[2018-11-13T21:24:06Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-xnh2b
+[2018-11-13T21:24:06Z] [Normal] [Pod:eap-app-1-xnh2b]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-1-xnh2b to localhost
+[2018-11-13T21:24:07Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-qbzxc
+[2018-11-13T21:24:07Z] [Normal] [Pod:eap-app-1-qbzxc]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-1-qbzxc to localhost
+[2018-11-13T21:24:07Z] [Normal] [Pod:eap-app-1-fcj45]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:07Z] [Normal] [Pod:eap-app-1-fcj45]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-fmvlx]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-qbzxc]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-fmvlx]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-xnh2b]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-qbzxc]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-fcj45]: (Created) Created container
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-xnh2b]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-fmvlx]: (Created) Created container
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-qbzxc]: (Created) Created container
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-xnh2b]: (Created) Created container
+[2018-11-13T21:24:08Z] [Normal] [Pod:eap-app-1-fcj45]: (Started) Started container
+[2018-11-13T21:24:09Z] [Normal] [Pod:eap-app-1-fmvlx]: (Started) Started container
+[2018-11-13T21:24:10Z] [Normal] [Pod:eap-app-1-qbzxc]: (Started) Started container
+[2018-11-13T21:24:11Z] [Normal] [Pod:eap-app-1-xnh2b]: (Started) Started container
+[2018-11-13T21:25:05Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 5 to 4
+[2018-11-13T21:25:05Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-fcj45
+[2018-11-13T21:25:08Z] [Normal] [Pod:eap-app-1-fcj45]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:25:26Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 4 to 3
+[2018-11-13T21:25:26Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-qbzxc
+[2018-11-13T21:25:29Z] [Normal] [Pod:eap-app-1-qbzxc]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:25:47Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 3 to 2
+[2018-11-13T21:25:47Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-xnh2b
+[2018-11-13T21:25:51Z] [Normal] [Pod:eap-app-1-xnh2b]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:26:09Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 2 to 1
+[2018-11-13T21:26:09Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-fmvlx
+[2018-11-13T21:26:12Z] [Normal] [Pod:eap-app-1-fmvlx]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:41:23Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 5
+[2018-11-13T21:41:23Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-cv5mf
+[2018-11-13T21:41:23Z] [Normal] [Pod:eap-app-1-cv5mf]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-1-cv5mf to localhost
+[2018-11-13T21:41:23Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-vlz62
+[2018-11-13T21:41:23Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-pwjvr
+[2018-11-13T21:41:23Z] [Normal] [Pod:eap-app-1-pwjvr]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-1-pwjvr to localhost
+[2018-11-13T21:41:23Z] [Normal] [Pod:eap-app-1-vlz62]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-1-vlz62 to localhost
+[2018-11-13T21:41:23Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-cn5zd
+[2018-11-13T21:41:23Z] [Normal] [Pod:eap-app-1-cn5zd]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-1-cn5zd to localhost
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-cv5mf]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-cv5mf]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-pwjvr]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-vlz62]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-cn5zd]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-cv5mf]: (Created) Created container
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-pwjvr]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-vlz62]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-cn5zd]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-pwjvr]: (Created) Created container
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-vlz62]: (Created) Created container
+[2018-11-13T21:41:24Z] [Normal] [Pod:eap-app-1-cn5zd]: (Created) Created container
+[2018-11-13T21:41:25Z] [Normal] [Pod:eap-app-1-cv5mf]: (Started) Started container
+[2018-11-13T21:41:25Z] [Normal] [Pod:eap-app-1-pwjvr]: (Started) Started container
+[2018-11-13T21:41:26Z] [Normal] [Pod:eap-app-1-vlz62]: (Started) Started container
+[2018-11-13T21:41:27Z] [Normal] [Pod:eap-app-1-cn5zd]: (Started) Started container
+[2018-11-13T21:44:42Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 5 to 4
+[2018-11-13T21:44:42Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-pwjvr
+[2018-11-13T21:44:45Z] [Warning] [Pod:eap-app-1-pwjvr]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T21:44:45Z] [Normal] [Pod:eap-app-1-pwjvr]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:45:04Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 4 to 3
+[2018-11-13T21:45:04Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-vlz62
+[2018-11-13T21:45:07Z] [Warning] [Pod:eap-app-1-vlz62]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T21:45:07Z] [Normal] [Pod:eap-app-1-vlz62]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:45:25Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 3 to 2
+[2018-11-13T21:45:25Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-cn5zd
+[2018-11-13T21:45:27Z] [Normal] [Pod:eap-app-1-cn5zd]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:45:46Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 2 to 1
+[2018-11-13T21:45:46Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-cv5mf
+[2018-11-13T21:45:48Z] [Warning] [Pod:eap-app-1-cv5mf]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T21:45:48Z] [Warning] [Pod:eap-app-1-cv5mf]: (Unhealthy) Readiness probe failed: 
+[2018-11-13T21:45:48Z] [Normal] [Pod:eap-app-1-cv5mf]: (Killing) Killing container with id docker://eap-app:Need to kill Pod

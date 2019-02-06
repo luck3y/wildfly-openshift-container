@@ -1,0 +1,65 @@
+[2018-11-13T21:27:10Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 3 to 1
+[2018-11-13T21:27:10Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-947z7
+[2018-11-13T21:27:10Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-4mp7r
+[2018-11-13T21:27:13Z] [Normal] [Pod:eap-app-1-4mp7r]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:27:14Z] [Normal] [Pod:eap-app-1-947z7]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:27:15Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-2" for version 2
+[2018-11-13T21:27:15Z] [Normal] [Pod:eap-app-2-deploy]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-2-deploy to localhost
+[2018-11-13T21:27:15Z] [Normal] [Pod:eap-app-2-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T21:27:16Z] [Normal] [Pod:eap-app-2-deploy]: (Created) Created container
+[2018-11-13T21:27:16Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-kqbgg
+[2018-11-13T21:27:16Z] [Normal] [Pod:eap-app-2-deploy]: (Started) Started container
+[2018-11-13T21:27:18Z] [Warning] [Pod:eap-app-1-kqbgg]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T21:27:18Z] [Normal] [Pod:eap-app-1-kqbgg]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:27:21Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-75tr5
+[2018-11-13T21:27:21Z] [Normal] [Pod:eap-app-2-75tr5]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-2-75tr5 to localhost
+[2018-11-13T21:27:22Z] [Normal] [Pod:eap-app-2-75tr5]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:27:22Z] [Normal] [Pod:eap-app-2-75tr5]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:27:22Z] [Normal] [Pod:eap-app-2-75tr5]: (Created) Created container
+[2018-11-13T21:27:23Z] [Normal] [Pod:eap-app-2-75tr5]: (Started) Started container
+[2018-11-13T21:27:48Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-2" from 1 to 2
+[2018-11-13T21:27:48Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-968s2
+[2018-11-13T21:27:48Z] [Normal] [Pod:eap-app-2-968s2]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-2-968s2 to localhost
+[2018-11-13T21:27:49Z] [Normal] [Pod:eap-app-2-968s2]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:27:49Z] [Normal] [Pod:eap-app-2-968s2]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:27:49Z] [Normal] [Pod:eap-app-2-968s2]: (Created) Created container
+[2018-11-13T21:27:50Z] [Normal] [Pod:eap-app-2-968s2]: (Started) Started container
+[2018-11-13T21:28:01Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) (combined from similar events): Scaled replication controller "eap-app-2" from 2 to 3
+[2018-11-13T21:28:01Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-xm66s
+[2018-11-13T21:28:01Z] [Normal] [Pod:eap-app-2-xm66s]: (Scheduled) Successfully assigned test-arq-eap72-9c72fb18/eap-app-2-xm66s to localhost
+[2018-11-13T21:28:02Z] [Normal] [Pod:eap-app-2-xm66s]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:28:02Z] [Normal] [Pod:eap-app-2-xm66s]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-9c72fb18/eap-app@sha256:e3da6692b1e2a6b12e8783f0f8034988771821df4c39a38ed470e99977ad6690"
+[2018-11-13T21:28:02Z] [Normal] [Pod:eap-app-2-xm66s]: (Created) Created container
+[2018-11-13T21:28:03Z] [Normal] [Pod:eap-app-2-xm66s]: (Started) Started container
+[2018-11-13T21:49:11Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 3 to 1
+[2018-11-13T21:49:11Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-7zzfd
+[2018-11-13T21:49:11Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-rvrd7
+[2018-11-13T21:49:14Z] [Normal] [Pod:eap-app-1-rvrd7]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:49:15Z] [Normal] [Pod:eap-app-1-7zzfd]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:49:16Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-2" for version 2
+[2018-11-13T21:49:16Z] [Normal] [Pod:eap-app-2-deploy]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-deploy to localhost
+[2018-11-13T21:49:17Z] [Normal] [Pod:eap-app-2-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T21:49:17Z] [Normal] [Pod:eap-app-2-deploy]: (Created) Created container
+[2018-11-13T21:49:17Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-gpghv
+[2018-11-13T21:49:18Z] [Normal] [Pod:eap-app-2-deploy]: (Started) Started container
+[2018-11-13T21:49:21Z] [Normal] [Pod:eap-app-1-gpghv]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T21:49:22Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-qdxbx
+[2018-11-13T21:49:22Z] [Normal] [Pod:eap-app-2-qdxbx]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-qdxbx to localhost
+[2018-11-13T21:49:23Z] [Normal] [Pod:eap-app-2-qdxbx]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:49:23Z] [Normal] [Pod:eap-app-2-qdxbx]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:49:24Z] [Normal] [Pod:eap-app-2-qdxbx]: (Created) Created container
+[2018-11-13T21:49:24Z] [Normal] [Pod:eap-app-2-qdxbx]: (Started) Started container
+[2018-11-13T21:49:52Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-2" from 1 to 2
+[2018-11-13T21:49:52Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-52fq9
+[2018-11-13T21:49:52Z] [Normal] [Pod:eap-app-2-52fq9]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-52fq9 to localhost
+[2018-11-13T21:49:53Z] [Normal] [Pod:eap-app-2-52fq9]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:49:53Z] [Normal] [Pod:eap-app-2-52fq9]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:49:53Z] [Normal] [Pod:eap-app-2-52fq9]: (Created) Created container
+[2018-11-13T21:49:54Z] [Normal] [Pod:eap-app-2-52fq9]: (Started) Started container
+[2018-11-13T21:50:06Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) (combined from similar events): Scaled replication controller "eap-app-2" from 2 to 3
+[2018-11-13T21:50:06Z] [Normal] [ReplicationController:eap-app-2]: (SuccessfulCreate) Created pod: eap-app-2-z9lkv
+[2018-11-13T21:50:06Z] [Normal] [Pod:eap-app-2-z9lkv]: (Scheduled) Successfully assigned test-arq-eap72-7a5addcd/eap-app-2-z9lkv to localhost
+[2018-11-13T21:50:06Z] [Normal] [Pod:eap-app-2-z9lkv]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:50:06Z] [Normal] [Pod:eap-app-2-z9lkv]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-7a5addcd/eap-app@sha256:c419bea66c5af68cf3ccf40a9ea370d59bc824a1b526ad1cae452d55f6581410"
+[2018-11-13T21:50:07Z] [Normal] [Pod:eap-app-2-z9lkv]: (Created) Created container
+[2018-11-13T21:50:07Z] [Normal] [Pod:eap-app-2-z9lkv]: (Started) Started container

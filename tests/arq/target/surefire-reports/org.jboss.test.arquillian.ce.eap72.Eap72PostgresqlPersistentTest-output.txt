@@ -1,0 +1,578 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+CubeKubernetesConfiguration: 
+  namespace = test-arq-eap72-94947d52
+  master.url = https://127.0.0.1:8443/
+  namespace.lazy.enabled = true
+  namespace.cleanup.enabled = true
+  namespace.cleanup.timeout = 0
+  namespace.cleanup.confirm.enabled = false
+  namespace.destroy.enabled = true
+  namespace.destroy.confirm.enabled = false
+  namespace.destroy.timeout = 0
+  wait.enabled = true
+  wait.timeout = 200000
+  wait.poll.interval = 5000
+  ansi.logger.enabled = true
+  env.init.enabled = true
+  logs.copy = true
+  cube.api.version = v1
+  cube.trust.certs = true
+  cube.fmp.build = false
+  cube.fmp.build.disable.for.mvn = false
+  cube.fmp.pom.path = pom.xml
+  cube.fmp.debug.output = false
+  cube.fmp.logs = true
+  cube.fmp.build.options = 
+
+CubeOpenShiftConfiguration: 
+  keepAliveGitServer = false
+  definitionsFile = src/test/resources/testrunner-pod.json
+  autoStartContainers = []
+  proxiedContainerPorts = [testrunner:9999, testrunner:9990, testrunner:8080]
+  portForwardBindAddress = 127.0.0.1
+  openshiftRouterHttpPort = 80
+  openshiftRouterHttpsPort = 443
+  enableImageStreamDetection = true
+  routerSniPort = 443
+  templateProcess = true
+  startupTimeout = 600
+  httpClientTimeout = 120
+  awaitRouteRepetitions = 1
+
+[32mInitializing Session:94947d52[m
+[32mUsing Kubernetes at: https://127.0.0.1:8443/[m
+[32mCreating project: test-arq-eap72-94947d52[m
+To switch to the new project: oc project test-arq-eap72-94947d52
+Storing pods console logs into dir /home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/surefire-reports
+Nov 13, 2018 3:11:52 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-openshift/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-openshift:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:52 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-openshift-parent/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-openshift-parent:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:52 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-parent/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-parent:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:52 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-api/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-api:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:52 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-spi/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-spi:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:53 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-requirement-spi/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-requirement-spi:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:53 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-core/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-core:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:53 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-kubernetes/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-kubernetes:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:53 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-kubernetes-parent/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-kubernetes-parent:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:53 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/fabric8-maven-plugin-build/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:fabric8-maven-plugin-build:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 3:11:54 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-openshift-api/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-openshift-api:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+[33mDid not find any kubernetes/openshift configuration files before starting the test execution. If you are using fabric8-maven-plugin, ensure `mvn package fabric8:resource fabric8:build` is run first to generate the resources.[m
+Nov 13, 2018 3:11:55 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier applyKubernetesResourcesAtClassScope
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest
+Nov 13, 2018 3:11:55 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor createEnvironment
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest
+Nov 13, 2018 3:11:55 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createDynamicOpenShiftImageStreamResources
+INFO: Creating new OpenShift image stream resource: '{"metadata":{"name":"jboss-eap72-openshift","annotations":{"openshift.io\/image.insecureRepository":true}},"apiVersion":"v1","kind":"ImageStream","spec":{"tags":[{"importPolicy":{"insecure":true},"name":"1.0","annotations":{"version":"1.0"},"from":{"kind":"DockerImage","name":"docker-registry.engineering.redhat.com\/kwills\/eap72-openshift:DNSPING-GMS-1"}}]}}'
+Nov 13, 2018 3:11:56 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createOpenShiftResources
+INFO: Creating new OpenShift resource: https://raw.githubusercontent.com/openshift/origin/v3.9.0/examples/image-streams/image-streams-rhel7.json
+Nov 13, 2018 3:11:57 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createOpenShiftResources
+INFO: Creating new OpenShift resource: https://raw.githubusercontent.com/jboss-openshift/application-templates/master/secrets/eap7-app-secret.json
+Nov 13, 2018 3:11:57 PM org.arquillian.cube.openshift.impl.resources.TemplateProcessor processTemplate
+WARNING: Empty labels for template: https://raw.githubusercontent.com/jboss-container-images/jboss-eap-7-openshift-image/eap72-dev/templates//eap72-postgresql-persistent-s2i.json, namespace: test-arq-eap72-94947d52
+Nov 13, 2018 3:11:57 PM org.arquillian.cube.openshift.impl.resources.TemplateProcessor processTemplate
+INFO: Applying OpenShift template: https://raw.githubusercontent.com/jboss-container-images/jboss-eap-7-openshift-image/eap72-dev/templates//eap72-postgresql-persistent-s2i.json
+waiting for pod testrunner [2018-11-13T21:11:58Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/testrunner to localhost
+
+[2018-11-13T21:11:59Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-1-build to localhost
+
+[2018-11-13T21:11:59Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+
+[2018-11-13T21:11:59Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+
+[2018-11-13T21:12:00Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+
+[2018-11-13T21:12:00Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+
+[2018-11-13T21:12:00Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-94947d52/eap-app-1 is now running
+
+[2018-11-13T21:12:04Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+
+[2018-11-13T21:12:04Z] [Normal] [Pod:testrunner]: (Created) Created container
+
+[2018-11-13T21:12:04Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+
+[2018-11-13T21:12:04Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+
+[2018-11-13T21:12:05Z] [Normal] [Pod:testrunner]: (Started) Started container
+
+[2018-11-13T21:12:05Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+
+[2018-11-13T21:12:06Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+
+[2018-11-13T21:12:06Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+
+[2018-11-13T21:12:07Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+
+[2018-11-13T21:12:14Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (DeploymentCreated) Created new replication controller "eap-app-postgresql-1" for version 1
+
+[2018-11-13T21:12:14Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-postgresql-1-deploy to localhost
+
+ done!
+[2018-11-13T21:12:15Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+
+Forwarding port /127.0.0.1:42223 for 172.17.0.6:9999
+Forwarding port /127.0.0.1:40791 for 172.17.0.6:9990
+Forwarding port /127.0.0.1:39123 for 172.17.0.6:8080
+[2018-11-13T21:12:15Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Created) Created container
+
+Adding route to Arquillian Naming Service: null eap-app-test-arq-eap72-94947d52.127.0.0.1.nip.io
+Adding route to Arquillian Naming Service: null secure-eap-app-test-arq-eap72-94947d52.127.0.0.1.nip.io
+Nov 13, 2018 3:12:15 PM org.arquillian.cube.openshift.impl.ext.TemplateContainerStarter waitForDeployments
+INFO: Waiting for environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest
+Nov 13, 2018 3:12:15 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1], timeout: 600s, check period: 4000ms
+[2018-11-13T21:12:15Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-bhls7
+
+[2018-11-13T21:12:15Z] [Normal] [Pod:eap-app-postgresql-1-bhls7]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-postgresql-1-bhls7 to localhost
+
+[2018-11-13T21:12:15Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Started) Started container
+
+[2018-11-13T21:12:16Z] [Normal] [Pod:eap-app-postgresql-1-bhls7]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+
+[2018-11-13T21:12:20Z] [Normal] [Pod:eap-app-postgresql-1-bhls7]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+
+[2018-11-13T21:12:20Z] [Normal] [Pod:eap-app-postgresql-1-bhls7]: (Created) Created container
+
+[2018-11-13T21:12:21Z] [Normal] [Pod:eap-app-postgresql-1-bhls7]: (Started) Started container
+
+[2018-11-13T21:12:35Z] [Normal] [Pod:eap-app-postgresql-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+
+[2018-11-13T21:13:16Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+
+[2018-11-13T21:13:16Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-1-deploy to localhost
+
+[2018-11-13T21:13:17Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-94947d52/eap-app-1 completed successfully
+
+[2018-11-13T21:13:17Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+
+[2018-11-13T21:13:17Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+
+[2018-11-13T21:13:18Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-tk79h
+
+[2018-11-13T21:13:18Z] [Normal] [Pod:eap-app-1-tk79h]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-1-tk79h to localhost
+
+[2018-11-13T21:13:18Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+
+[2018-11-13T21:13:19Z] [Normal] [Pod:eap-app-1-tk79h]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-94947d52/eap-app@sha256:ba10646b51f7d96f14ec3f9c21ebac82c5d56551ff623ded5f040186dc75b122"
+
+[2018-11-13T21:13:19Z] [Normal] [Pod:eap-app-1-tk79h]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-94947d52/eap-app@sha256:ba10646b51f7d96f14ec3f9c21ebac82c5d56551ff623ded5f040186dc75b122"
+
+[2018-11-13T21:13:19Z] [Normal] [Pod:eap-app-1-tk79h]: (Created) Created container
+
+[2018-11-13T21:13:20Z] [Normal] [Pod:eap-app-1-tk79h]: (Started) Started container
+
+Nov 13, 2018 3:13:47 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1 (pods: [eap-app-1-tk79h])
+Nov 13, 2018 3:13:47 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1] is ready.
+Nov 13, 2018 3:13:47 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 1], timeout: 600s, check period: 4000ms
+Nov 13, 2018 3:13:51 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 1 (pods: [eap-app-postgresql-1-bhls7])
+Nov 13, 2018 3:13:51 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 1] is ready.
+Nov 13, 2018 3:13:52 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier applyKubernetesResourcesAtMethodScope
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest method insertRestartAndVerify
+Nov 13, 2018 3:13:52 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor createOpenShiftResource
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest method public void org.jboss.test.arquillian.ce.common.EapPersistentTestBase.insertRestartAndVerify() throws java.lang.Exception
+
+<!--
+    JBoss, Home of Professional Open Source
+    Copyright 2015, Red Hat, Inc. and/or its affiliates, and individual
+    contributors by the @authors tag. See the copyright.txt in the
+    distribution for a full listing of individual contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+
+            <h1>TODO list</h1>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">9e058da8-8d2f-4133-9a61-24deaed6b8d0</h3>
+                </div>
+                <div class="panel-body">
+                    d56c9e4f-63c4-45d2-8225-efc6b033cac0
+                </div>
+            </div>
+
+
+            <h2>New TODO entry</h2>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="summary">Summary</label>
+                    <input type="text" name="summary" id="summary" class="form-control" placeholder="Short summary of the task">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" class="form-control" placeholder="Full description of the task" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<!--
+    JBoss, Home of Professional Open Source
+    Copyright 2015, Red Hat, Inc. and/or its affiliates, and individual
+    contributors by the @authors tag. See the copyright.txt in the
+    distribution for a full listing of individual contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+
+            <h1>TODO list</h1>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">9e058da8-8d2f-4133-9a61-24deaed6b8d0</h3>
+                </div>
+                <div class="panel-body">
+                    d56c9e4f-63c4-45d2-8225-efc6b033cac0
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">7ac15793-6419-4006-97ae-87373d17de50</h3>
+                </div>
+                <div class="panel-body">
+                    f5fb5965-901f-4b75-b348-b7cb34dd4760
+                </div>
+            </div>
+
+
+            <h2>New TODO entry</h2>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="summary">Summary</label>
+                    <input type="text" name="summary" id="summary" class="form-control" placeholder="Short summary of the task">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" class="form-control" placeholder="Full description of the task" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+Nov 13, 2018 3:14:14 PM org.jboss.test.arquillian.ce.common.EapPersistentTestBase restartPod
+INFO: Scaling down eap-app-postgresql
+Nov 13, 2018 3:14:15 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 0], timeout: 600s, check period: 4000ms
+[2018-11-13T21:14:15Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-postgresql-1" from 1 to 0
+
+[2018-11-13T21:14:15Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-bhls7
+
+Nov 13, 2018 3:14:19 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 0 (pods: [])
+Nov 13, 2018 3:14:19 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 0] is ready.
+Nov 13, 2018 3:14:19 PM org.jboss.test.arquillian.ce.common.EapPersistentTestBase restartPod
+INFO: Scaling up eap-app-postgresql
+Nov 13, 2018 3:14:19 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 1], timeout: 600s, check period: 4000ms
+[2018-11-13T21:14:20Z] [Normal] [DeploymentConfig:eap-app-postgresql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-postgresql-1" from 0 to 1
+
+[2018-11-13T21:14:20Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulCreate) Created pod: eap-app-postgresql-1-c5bzb
+
+[2018-11-13T21:14:20Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-postgresql-1-c5bzb to localhost
+
+[2018-11-13T21:14:20Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Pulling) pulling image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+
+[2018-11-13T21:14:23Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/postgresql-95-rhel7@sha256:d8485173fd44552cecce0da38176a02d06e87bda75cd60974ed6e293746bf06b"
+
+[2018-11-13T21:14:23Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Created) Created container
+
+[2018-11-13T21:14:23Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Started) Started container
+
+[2018-11-13T21:14:24Z] [Warning] [Pod:eap-app-postgresql-1-bhls7]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: FATAL:  the database system is shutting down
+
+
+Nov 13, 2018 3:14:31 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 1 (pods: [eap-app-postgresql-1-c5bzb])
+Nov 13, 2018 3:14:31 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app-postgresql} is EQUAL 1] is ready.
+Nov 13, 2018 3:14:31 PM org.jboss.test.arquillian.ce.common.EapPersistentTestBase restartPod
+INFO: Scaling down eap-app
+Nov 13, 2018 3:14:33 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 0], timeout: 600s, check period: 4000ms
+[2018-11-13T21:14:33Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+
+[2018-11-13T21:14:33Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-tk79h
+
+[2018-11-13T21:14:34Z] [Warning] [Pod:eap-app-postgresql-1-bhls7]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+psql: FATAL:  the database system is shutting down
+
+
+[2018-11-13T21:14:36Z] [Normal] [Pod:eap-app-postgresql-1-bhls7]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+
+[2018-11-13T21:14:36Z] [Warning] [Pod:eap-app-1-tk79h]: (Unhealthy) Liveness probe failed: 
+
+[2018-11-13T21:14:36Z] [Normal] [Pod:eap-app-1-tk79h]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+
+Nov 13, 2018 3:14:37 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 0 (pods: [])
+Nov 13, 2018 3:14:37 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 0] is ready.
+Nov 13, 2018 3:14:37 PM org.jboss.test.arquillian.ce.common.EapPersistentTestBase restartPod
+INFO: Scaling up eap-app
+Nov 13, 2018 3:14:38 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1], timeout: 600s, check period: 4000ms
+[2018-11-13T21:14:38Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+
+[2018-11-13T21:14:38Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-9mfp8
+
+[2018-11-13T21:14:38Z] [Normal] [Pod:eap-app-1-9mfp8]: (Scheduled) Successfully assigned test-arq-eap72-94947d52/eap-app-1-9mfp8 to localhost
+
+[2018-11-13T21:14:38Z] [Normal] [Pod:eap-app-1-9mfp8]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-94947d52/eap-app@sha256:ba10646b51f7d96f14ec3f9c21ebac82c5d56551ff623ded5f040186dc75b122"
+
+[2018-11-13T21:14:39Z] [Normal] [Pod:eap-app-1-9mfp8]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-94947d52/eap-app@sha256:ba10646b51f7d96f14ec3f9c21ebac82c5d56551ff623ded5f040186dc75b122"
+
+[2018-11-13T21:14:39Z] [Normal] [Pod:eap-app-1-9mfp8]: (Created) Created container
+
+[2018-11-13T21:14:40Z] [Normal] [Pod:eap-app-1-9mfp8]: (Started) Started container
+
+Nov 13, 2018 3:15:06 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1 (pods: [eap-app-1-9mfp8])
+Nov 13, 2018 3:15:06 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1] is ready.
+<!--
+    JBoss, Home of Professional Open Source
+    Copyright 2015, Red Hat, Inc. and/or its affiliates, and individual
+    contributors by the @authors tag. See the copyright.txt in the
+    distribution for a full listing of individual contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+
+            <h1>TODO list</h1>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">9e058da8-8d2f-4133-9a61-24deaed6b8d0</h3>
+                </div>
+                <div class="panel-body">
+                    d56c9e4f-63c4-45d2-8225-efc6b033cac0
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">7ac15793-6419-4006-97ae-87373d17de50</h3>
+                </div>
+                <div class="panel-body">
+                    f5fb5965-901f-4b75-b348-b7cb34dd4760
+                </div>
+            </div>
+
+
+            <h2>New TODO entry</h2>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="summary">Summary</label>
+                    <input type="text" name="summary" id="summary" class="form-control" placeholder="Short summary of the task">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" class="form-control" placeholder="Full description of the task" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!--
+    JBoss, Home of Professional Open Source
+    Copyright 2015, Red Hat, Inc. and/or its affiliates, and individual
+    contributors by the @authors tag. See the copyright.txt in the
+    distribution for a full listing of individual contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="../resources/css/bootstrap-theme.min.css"/>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+
+            <h1>TODO list</h1>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">9e058da8-8d2f-4133-9a61-24deaed6b8d0</h3>
+                </div>
+                <div class="panel-body">
+                    d56c9e4f-63c4-45d2-8225-efc6b033cac0
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">7ac15793-6419-4006-97ae-87373d17de50</h3>
+                </div>
+                <div class="panel-body">
+                    f5fb5965-901f-4b75-b348-b7cb34dd4760
+                </div>
+            </div>
+
+
+            <h2>New TODO entry</h2>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="summary">Summary</label>
+                    <input type="text" name="summary" id="summary" class="form-control" placeholder="Short summary of the task">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" class="form-control" placeholder="Full description of the task" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+Nov 13, 2018 3:15:16 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier removeKubernetesResourcesAtMethodScope
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest method insertRestartAndVerify
+Nov 13, 2018 3:15:16 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor deleteOpenShiftResource
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest method insertRestartAndVerify
+Nov 13, 2018 3:15:16 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier removeKubernetesResourcesAtClassScope
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest
+Nov 13, 2018 3:15:16 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory deleteEnvironment
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72PostgresqlPersistentTest
+[2018-11-13T21:15:18Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+
+[2018-11-13T21:15:18Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-9mfp8
+
+[2018-11-13T21:15:18Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+
+[2018-11-13T21:15:18Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+
+[2018-11-13T21:15:20Z] [Normal] [ReplicationController:eap-app-postgresql-1]: (SuccessfulDelete) Deleted pod: eap-app-postgresql-1-c5bzb
+
+[2018-11-13T21:15:21Z] [Normal] [Pod:eap-app-postgresql-1-c5bzb]: (Killing) Killing container with id docker://eap-app-postgresql:Need to kill Pod
+
+[2018-11-13T21:15:21Z] [Normal] [Pod:eap-app-1-9mfp8]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+
+Deleting project: test-arq-eap72-94947d52...
+Project: test-arq-eap72-94947d52, successfully deleted
+[32mDestroying Session:94947d52[m

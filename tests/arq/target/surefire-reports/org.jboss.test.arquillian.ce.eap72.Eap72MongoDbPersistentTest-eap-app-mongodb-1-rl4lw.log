@@ -1,0 +1,101 @@
+=> sourcing /usr/share/container-scripts/mongodb/pre-init//10-check-env-vars.sh ...
+=> sourcing /usr/share/container-scripts/mongodb/pre-init//20-setup-wiredtiger-cache.sh ...
+=> sourcing /usr/share/container-scripts/mongodb/pre-init//30-set-config-file.sh ...
+=> sourcing /usr/share/container-scripts/mongodb/pre-init//35-setup-default-datadir.sh ...
+=> sourcing /usr/share/container-scripts/mongodb/pre-init//40-setup-keyfile.sh ...
+=> sourcing /usr/share/container-scripts/mongodb/pre-init//41-setup-ssl.sh ...
+=>  Waiting for MongoDB daemon up
+2018-11-12T23:18:50.711+0000 I CONTROL  [initandlisten] MongoDB starting : pid=23 port=27017 dbpath=/var/lib/mongodb/data 64-bit host=eap-app-mongodb-1-rl4lw
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten] db version v3.2.10
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten] git version: 79d9b3ab5ce20f51c272b4411202710a082d0317
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten] modules: none
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten] build environment:
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-12T23:18:50.712+0000 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "localhost", port: 27017 }, replication: { oplogSizeMB: 64 }, security: { authorization: "disabled" }, storage: { dbPath: "/var/lib/mongodb/data" }, systemLog: { quiet: true } }
+MongoDB shell version: 3.2.10
+2018-11-12T23:18:50.717+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=8G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+connecting to: localhost
+2018-11-12T23:18:50.758+0000 W NETWORK  [thread1] Failed to connect to 127.0.0.1:27017, reason: errno:111 Connection refused
+2018-11-12T23:18:50.758+0000 E QUERY    [thread1] Error: couldn't connect to server 127.0.0.1:27017, connection attempt failed :
+connect@src/mongo/shell/mongo.js:229:14
+@(connect):1:6
+exception: connect failed
+2018-11-12T23:18:50.900+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/data/diagnostic.data'
+2018-11-12T23:18:50.900+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2018-11-12T23:18:50.940+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+=>  Waiting for MongoDB daemon up
+MongoDB shell version: 3.2.10
+connecting to: localhost
+=> MongoDB daemon is up
+=> sourcing /usr/share/container-scripts/mongodb/start//10-init-users.sh ...
+=> [Mon Nov 12 23:18:52] Creating MongoDB admin user ...
+MongoDB shell version: 3.2.10
+connecting to: localhost:27017/admin
+2018-11-12T23:18:52.305+0000 I COMMAND  [conn3] command admin.$cmd command: createUser { createUser: "admin", pwd: "xxx", roles: [ "dbAdminAnyDatabase", "userAdminAnyDatabase", "readWriteAnyDatabase", "clusterAdmin" ], digestPassword: false, writeConcern: { w: "majority", wtimeout: 30000.0 } } keyUpdates:0 writeConflicts:0 numYields:0 reslen:22 locks:{ Global: { acquireCount: { r: 4, w: 4 } }, Database: { acquireCount: { W: 4 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_command 152ms
+Successfully added user: {
+	"user" : "admin",
+	"roles" : [
+		"dbAdminAnyDatabase",
+		"userAdminAnyDatabase",
+		"readWriteAnyDatabase",
+		"clusterAdmin"
+	]
+}
+bye
+=> [Mon Nov 12 23:18:52] Creating MongoDB uservTR user ...
+MongoDB shell version: 3.2.10
+connecting to: localhost:27017/admin
+Successfully added user: { "user" : "uservTR", "roles" : [ "readWrite" ] }
+bye
+killing process with pid: 23
+2018-11-12T23:18:52.696+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-11-12T23:18:52.696+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-11-12T23:18:52.697+0000 I CONTROL  [signalProcessingThread] now exiting
+2018-11-12T23:18:52.697+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-11-12T23:18:52.697+0000 I NETWORK  [signalProcessingThread] closing listening socket: 5
+2018-11-12T23:18:52.698+0000 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2018-11-12T23:18:52.698+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-11-12T23:18:52.698+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-11-12T23:18:52.698+0000 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2018-11-12T23:18:52.698+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-11-12T23:18:52.899+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-11-12T23:18:52.899+0000 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
+=>  Waiting for MongoDB daemon down
+MongoDB shell version: 3.2.10
+connecting to: localhost
+2018-11-12T23:18:53.772+0000 W NETWORK  [thread1] Failed to connect to 127.0.0.1:27017, reason: errno:111 Connection refused
+2018-11-12T23:18:53.772+0000 E QUERY    [thread1] Error: couldn't connect to server 127.0.0.1:27017, connection attempt failed :
+connect@src/mongo/shell/mongo.js:229:14
+@(connect):1:6
+exception: connect failed
+=> MongoDB daemon is down
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/var/lib/mongodb/data 64-bit host=eap-app-mongodb-1-rl4lw
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] db version v3.2.10
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] git version: 79d9b3ab5ce20f51c272b4411202710a082d0317
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] modules: none
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] build environment:
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-12T23:18:53.802+0000 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { port: 27017 }, replication: { oplogSizeMB: 64 }, security: { authorization: "enabled" }, storage: { dbPath: "/var/lib/mongodb/data" }, systemLog: { quiet: true } }
+2018-11-12T23:18:53.806+0000 I -        [initandlisten] Detected data files in /var/lib/mongodb/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-11-12T23:18:53.806+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=8G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-11-12T23:18:54.742+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/data/diagnostic.data'
+2018-11-12T23:18:54.742+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2018-11-12T23:18:54.743+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-11-12T23:20:59.745+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-11-12T23:20:59.745+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-11-12T23:20:59.746+0000 I CONTROL  [signalProcessingThread] now exiting
+2018-11-12T23:20:59.746+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-11-12T23:20:59.747+0000 I NETWORK  [signalProcessingThread] closing listening socket: 5
+2018-11-12T23:20:59.747+0000 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2018-11-12T23:20:59.747+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-11-12T23:20:59.750+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-11-12T23:20:59.750+0000 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2018-11-12T23:20:59.750+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-11-12T23:20:59.887+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-11-12T23:20:59.887+0000 I CONTROL  [signalProcessingThread] dbexit:  rc: 0

@@ -1,0 +1,72 @@
+[2018-11-12T23:05:09Z] [Normal] [DeploymentConfig:eap-app-mysql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mysql-1" from 1 to 0
+[2018-11-12T23:05:09Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-2kxt8
+[2018-11-12T23:05:13Z] [Normal] [Pod:eap-app-mysql-1-2kxt8]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-12T23:05:13Z] [Normal] [DeploymentConfig:eap-app-mysql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mysql-1" from 0 to 1
+[2018-11-12T23:05:13Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-25k46
+[2018-11-12T23:05:13Z] [Normal] [Pod:eap-app-mysql-1-25k46]: (Scheduled) Successfully assigned test-arq-eap72-258b13fa/eap-app-mysql-1-25k46 to localhost
+[2018-11-12T23:05:14Z] [Normal] [Pod:eap-app-mysql-1-25k46]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-12T23:06:14Z] [Warning] [Pod:eap-app-mysql-1-25k46]: (Failed) Failed to pull image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020": rpc error: code = Canceled desc = context canceled
+[2018-11-12T23:06:14Z] [Warning] [Pod:eap-app-mysql-1-25k46]: (Failed) Error: ErrImagePull
+[2018-11-12T23:06:16Z] [Normal] [Pod:eap-app-mysql-1-25k46]: (BackOff) Back-off pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-12T23:06:16Z] [Warning] [Pod:eap-app-mysql-1-25k46]: (Failed) Error: ImagePullBackOff
+[2018-11-12T23:06:28Z] [Normal] [Pod:eap-app-mysql-1-25k46]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-12T23:06:31Z] [Normal] [Pod:eap-app-mysql-1-25k46]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-12T23:06:31Z] [Normal] [Pod:eap-app-mysql-1-25k46]: (Created) Created container
+[2018-11-12T23:06:32Z] [Normal] [Pod:eap-app-mysql-1-25k46]: (Started) Started container
+[2018-11-12T23:06:47Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-12T23:06:47Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-vnbgx
+[2018-11-12T23:06:52Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-12T23:06:52Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-t2wh6
+[2018-11-12T23:06:52Z] [Normal] [Pod:eap-app-1-t2wh6]: (Scheduled) Successfully assigned test-arq-eap72-258b13fa/eap-app-1-t2wh6 to localhost
+[2018-11-12T23:06:53Z] [Normal] [Pod:eap-app-1-t2wh6]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-258b13fa/eap-app@sha256:ea0b90022f808408c22d4f1e2d0c03a5f5dbf58d68b7d8e016b1f2d5a8caa80d"
+[2018-11-12T23:06:53Z] [Normal] [Pod:eap-app-1-t2wh6]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-258b13fa/eap-app@sha256:ea0b90022f808408c22d4f1e2d0c03a5f5dbf58d68b7d8e016b1f2d5a8caa80d"
+[2018-11-12T23:06:53Z] [Normal] [Pod:eap-app-1-t2wh6]: (Created) Created container
+[2018-11-12T23:06:54Z] [Normal] [Pod:eap-app-1-t2wh6]: (Started) Started container
+[2018-11-13T00:36:54Z] [Normal] [DeploymentConfig:eap-app-mysql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mysql-1" from 1 to 0
+[2018-11-13T00:36:54Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-6kxsn
+[2018-11-13T00:36:57Z] [Normal] [Pod:eap-app-mysql-1-6kxsn]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-13T00:36:59Z] [Normal] [DeploymentConfig:eap-app-mysql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mysql-1" from 0 to 1
+[2018-11-13T00:36:59Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-c86mm
+[2018-11-13T00:36:59Z] [Normal] [Pod:eap-app-mysql-1-c86mm]: (Scheduled) Successfully assigned test-arq-eap72-11adc9d1/eap-app-mysql-1-c86mm to localhost
+[2018-11-13T00:36:59Z] [Normal] [Pod:eap-app-mysql-1-c86mm]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T00:37:02Z] [Normal] [Pod:eap-app-mysql-1-c86mm]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T00:37:02Z] [Normal] [Pod:eap-app-mysql-1-c86mm]: (Created) Created container
+[2018-11-13T00:37:02Z] [Normal] [Pod:eap-app-mysql-1-c86mm]: (Started) Started container
+[2018-11-13T00:37:16Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T00:37:16Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-qk2n2
+[2018-11-13T00:37:19Z] [Warning] [Pod:eap-app-1-qk2n2]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T00:37:20Z] [Warning] [Pod:eap-app-1-qk2n2]: (Unhealthy) Readiness probe failed: 
+[2018-11-13T00:37:20Z] [Normal] [Pod:eap-app-1-qk2n2]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T00:37:22Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T00:37:22Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-chkr8
+[2018-11-13T00:37:22Z] [Normal] [Pod:eap-app-1-chkr8]: (Scheduled) Successfully assigned test-arq-eap72-11adc9d1/eap-app-1-chkr8 to localhost
+[2018-11-13T00:37:22Z] [Normal] [Pod:eap-app-1-chkr8]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-11adc9d1/eap-app@sha256:9dd384ca639bbac77e073aaf559a9c32cdc2506d5273331b20688be9eae9b743"
+[2018-11-13T00:37:22Z] [Normal] [Pod:eap-app-1-chkr8]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-11adc9d1/eap-app@sha256:9dd384ca639bbac77e073aaf559a9c32cdc2506d5273331b20688be9eae9b743"
+[2018-11-13T00:37:22Z] [Normal] [Pod:eap-app-1-chkr8]: (Created) Created container
+[2018-11-13T00:37:23Z] [Normal] [Pod:eap-app-1-chkr8]: (Started) Started container
+[2018-11-13T19:49:32Z] [Normal] [DeploymentConfig:eap-app-mysql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mysql-1" from 1 to 0
+[2018-11-13T19:49:32Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulDelete) Deleted pod: eap-app-mysql-1-7qvm6
+[2018-11-13T19:49:32Z] [Warning] [Pod:eap-app-mysql-1-7qvm6]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:49:35Z] [Warning] [Pod:eap-app-mysql-1-7qvm6]: (Unhealthy) Liveness probe failed: dial tcp 172.17.0.13:3306: connect: connection refused
+[2018-11-13T19:49:36Z] [Normal] [Pod:eap-app-mysql-1-7qvm6]: (Killing) Killing container with id docker://eap-app-mysql:Need to kill Pod
+[2018-11-13T19:49:36Z] [Normal] [DeploymentConfig:eap-app-mysql]: (ReplicationControllerScaled) Scaled replication controller "eap-app-mysql-1" from 0 to 1
+[2018-11-13T19:49:36Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-kpsrc
+[2018-11-13T19:49:36Z] [Normal] [Pod:eap-app-mysql-1-kpsrc]: (Scheduled) Successfully assigned test-arq-eap72-4efb1caf/eap-app-mysql-1-kpsrc to localhost
+[2018-11-13T19:49:37Z] [Normal] [Pod:eap-app-mysql-1-kpsrc]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:49:39Z] [Normal] [Pod:eap-app-mysql-1-kpsrc]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:49:39Z] [Normal] [Pod:eap-app-mysql-1-kpsrc]: (Created) Created container
+[2018-11-13T19:49:40Z] [Normal] [Pod:eap-app-mysql-1-kpsrc]: (Started) Started container
+[2018-11-13T19:49:50Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+[2018-11-13T19:49:50Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-bqwfs
+[2018-11-13T19:49:52Z] [Warning] [Pod:eap-app-1-bqwfs]: (Unhealthy) Liveness probe failed: 
+[2018-11-13T19:49:52Z] [Normal] [Pod:eap-app-1-bqwfs]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+[2018-11-13T19:49:54Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 0 to 1
+[2018-11-13T19:49:54Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-sgxsb
+[2018-11-13T19:49:54Z] [Normal] [Pod:eap-app-1-sgxsb]: (Scheduled) Successfully assigned test-arq-eap72-4efb1caf/eap-app-1-sgxsb to localhost
+[2018-11-13T19:49:55Z] [Normal] [Pod:eap-app-1-sgxsb]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-4efb1caf/eap-app@sha256:6296be69f5f834475e78d27fb3b78f9b018c3202c02f9ba91f195a86c8525922"
+[2018-11-13T19:49:55Z] [Normal] [Pod:eap-app-1-sgxsb]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-4efb1caf/eap-app@sha256:6296be69f5f834475e78d27fb3b78f9b018c3202c02f9ba91f195a86c8525922"
+[2018-11-13T19:49:55Z] [Normal] [Pod:eap-app-1-sgxsb]: (Created) Created container
+[2018-11-13T19:49:55Z] [Normal] [Pod:eap-app-1-sgxsb]: (Started) Started container

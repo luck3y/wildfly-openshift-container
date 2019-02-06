@@ -1,0 +1,212 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+CubeKubernetesConfiguration: 
+  namespace = test-arq-eap72-806ffe81
+  master.url = https://127.0.0.1:8443/
+  namespace.lazy.enabled = true
+  namespace.cleanup.enabled = true
+  namespace.cleanup.timeout = 0
+  namespace.cleanup.confirm.enabled = false
+  namespace.destroy.enabled = true
+  namespace.destroy.confirm.enabled = false
+  namespace.destroy.timeout = 0
+  wait.enabled = true
+  wait.timeout = 200000
+  wait.poll.interval = 5000
+  ansi.logger.enabled = true
+  env.init.enabled = true
+  logs.copy = true
+  cube.api.version = v1
+  cube.trust.certs = true
+  cube.fmp.build = false
+  cube.fmp.build.disable.for.mvn = false
+  cube.fmp.pom.path = pom.xml
+  cube.fmp.debug.output = false
+  cube.fmp.logs = true
+  cube.fmp.build.options = 
+
+CubeOpenShiftConfiguration: 
+  keepAliveGitServer = false
+  definitionsFile = src/test/resources/testrunner-pod.json
+  autoStartContainers = []
+  proxiedContainerPorts = [testrunner:9999, testrunner:9990, testrunner:8080]
+  portForwardBindAddress = 127.0.0.1
+  openshiftRouterHttpPort = 80
+  openshiftRouterHttpsPort = 443
+  enableImageStreamDetection = true
+  routerSniPort = 443
+  templateProcess = true
+  startupTimeout = 600
+  httpClientTimeout = 120
+  awaitRouteRepetitions = 1
+
+[32mInitializing Session:806ffe81[m
+[32mUsing Kubernetes at: https://127.0.0.1:8443/[m
+[32mCreating project: test-arq-eap72-806ffe81[m
+To switch to the new project: oc project test-arq-eap72-806ffe81
+Storing pods console logs into dir /home/kwills/os/git/jboss-eap-7-openshift-image/tests/arq/target/surefire-reports
+Nov 13, 2018 1:33:22 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-openshift/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-openshift:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:22 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-openshift-parent/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-openshift-parent:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:22 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-parent/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-parent:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:23 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-api/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-api:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:23 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-spi/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-spi:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:23 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-requirement-spi/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-requirement-spi:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:23 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-core/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-core:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:23 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-kubernetes/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-kubernetes:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:24 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-kubernetes-parent/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-kubernetes-parent:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:24 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/fabric8-maven-plugin-build/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:fabric8-maven-plugin-build:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+Nov 13, 2018 1:33:24 PM org.jboss.shrinkwrap.resolver.impl.maven.logging.LogTransferListener transferFailed
+WARNING: Failed downloading org/arquillian/cube/arquillian-cube-openshift-api/1.18.3-SNAPSHOT/maven-metadata.xml from http://repo1.maven.org/maven2/. Reason: 
+org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata org.arquillian.cube:arquillian-cube-openshift-api:1.18.3-SNAPSHOT/maven-metadata.xml in central (http://repo1.maven.org/maven2)
+[33mDid not find any kubernetes/openshift configuration files before starting the test execution. If you are using fabric8-maven-plugin, ensure `mvn package fabric8:resource fabric8:build` is run first to generate the resources.[m
+Nov 13, 2018 1:33:25 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor createEnvironment
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest
+Nov 13, 2018 1:33:25 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createDynamicOpenShiftImageStreamResources
+INFO: Creating new OpenShift image stream resource: '{"metadata":{"name":"jboss-eap72-openshift","annotations":{"openshift.io\/image.insecureRepository":true}},"apiVersion":"v1","kind":"ImageStream","spec":{"tags":[{"importPolicy":{"insecure":true},"name":"1.0","annotations":{"version":"1.0"},"from":{"kind":"DockerImage","name":"docker-registry.engineering.redhat.com\/kwills\/eap72-openshift:DNSPING-GMS-1"}}]}}'
+Nov 13, 2018 1:33:25 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createDynamicOpenShiftImageStreamResources
+INFO: Creating new OpenShift image stream resource: '{"metadata":{"name":"jboss-eap72-openshift","annotations":{"openshift.io\/image.insecureRepository":true}},"apiVersion":"v1","kind":"ImageStream","spec":{"tags":[{"importPolicy":{"insecure":true},"name":"1.0","annotations":{"version":"1.0"},"from":{"kind":"DockerImage","name":"docker-registry.engineering.redhat.com\/kwills\/eap72-openshift:DNSPING-GMS-1"}}]}}'
+Nov 13, 2018 1:33:26 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createOpenShiftResources
+INFO: Creating new OpenShift resource: https://raw.githubusercontent.com/openshift/origin/v3.9.0/examples/image-streams/image-streams-rhel7.json
+Nov 13, 2018 1:33:27 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createOpenShiftResources
+INFO: Creating new OpenShift resource: https://raw.githubusercontent.com/openshift/origin/v3.9.0/examples/image-streams/image-streams-rhel7.json
+Nov 13, 2018 1:33:29 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory createOpenShiftResources
+INFO: Creating new OpenShift resource: https://raw.githubusercontent.com/jboss-openshift/application-templates/master/secrets/eap7-app-secret.json
+Nov 13, 2018 1:33:29 PM org.arquillian.cube.openshift.impl.resources.TemplateProcessor processTemplate
+WARNING: Empty labels for template: https://raw.githubusercontent.com/jboss-container-images/jboss-eap-7-openshift-image/eap72-dev/templates//eap72-https-s2i.json, namespace: test-arq-eap72-806ffe81
+Nov 13, 2018 1:33:29 PM org.arquillian.cube.openshift.impl.resources.TemplateProcessor processTemplate
+INFO: Applying OpenShift template: https://raw.githubusercontent.com/jboss-container-images/jboss-eap-7-openshift-image/eap72-dev/templates//eap72-https-s2i.json
+Nov 13, 2018 1:33:30 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier applyKubernetesResourcesAtClassScope
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest
+waiting for pod testrunner [2018-11-13T19:33:30Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/testrunner to localhost
+
+[2018-11-13T19:33:30Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/eap-app-1-build to localhost
+
+[2018-11-13T19:33:31Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+
+[2018-11-13T19:33:31Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+
+[2018-11-13T19:33:31Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+
+[2018-11-13T19:33:32Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+
+[2018-11-13T19:33:32Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-806ffe81/eap-app-1 is now running
+
+[2018-11-13T19:33:35Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+
+[2018-11-13T19:33:39Z] [Normal] [Pod:testrunner]: (Created) Created container
+
+[2018-11-13T19:33:40Z] [Normal] [Pod:testrunner]: (Started) Started container
+
+[2018-11-13T19:33:45Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+
+[2018-11-13T19:33:45Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+
+[2018-11-13T19:33:46Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+
+[2018-11-13T19:33:47Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+
+[2018-11-13T19:33:48Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+
+[2018-11-13T19:33:49Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+
+ done!
+Forwarding port /127.0.0.1:37797 for 172.17.0.8:9999
+Forwarding port /127.0.0.1:43779 for 172.17.0.8:9990
+Forwarding port /127.0.0.1:33707 for 172.17.0.8:8080
+Adding route to Arquillian Naming Service: null eap-app-test-arq-eap72-806ffe81.127.0.0.1.nip.io
+Adding route to Arquillian Naming Service: null secure-eap-app-test-arq-eap72-806ffe81.127.0.0.1.nip.io
+Nov 13, 2018 1:33:54 PM org.arquillian.cube.openshift.impl.ext.TemplateContainerStarter waitForDeployments
+INFO: Waiting for environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest
+Nov 13, 2018 1:33:54 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Applying checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1], timeout: 600s, check period: 4000ms
+[2018-11-13T19:36:34Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-806ffe81/eap-app-1 completed successfully
+
+[2018-11-13T19:36:34Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+
+[2018-11-13T19:36:34Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/eap-app-1-deploy to localhost
+
+[2018-11-13T19:36:35Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+
+[2018-11-13T19:36:36Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+
+[2018-11-13T19:36:36Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-vjb8b
+
+[2018-11-13T19:36:36Z] [Normal] [Pod:eap-app-1-vjb8b]: (Scheduled) Successfully assigned test-arq-eap72-806ffe81/eap-app-1-vjb8b to localhost
+
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-vjb8b]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-806ffe81/eap-app@sha256:e149aa67a09a661f5dd291c05115d9003d850fa6ccdcd71377746f404b2909d2"
+
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-vjb8b]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-806ffe81/eap-app@sha256:e149aa67a09a661f5dd291c05115d9003d850fa6ccdcd71377746f404b2909d2"
+
+[2018-11-13T19:36:37Z] [Normal] [Pod:eap-app-1-vjb8b]: (Created) Created container
+
+[2018-11-13T19:36:38Z] [Normal] [Pod:eap-app-1-vjb8b]: (Started) Started container
+
+[2018-11-13T19:37:07Z] [Normal] [Pod:eap-app-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+
+Nov 13, 2018 1:37:09 PM org.arquillian.cube.openshift.impl.adapter.AbstractOpenShiftAdapter$PodCountChecker check
+INFO: Condition satisfied: number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1 (pods: [eap-app-1-vjb8b])
+Nov 13, 2018 1:37:09 PM org.arquillian.cube.openshift.impl.utils.Containers delay
+INFO: Checker [Number of pod(s) matching labels: {deploymentConfig=eap-app} is EQUAL 1] is ready.
+Nov 13, 2018 1:37:09 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor createOpenShiftResource
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method public void org.jboss.test.arquillian.ce.common.EapBasicTestBase.testInitialState() throws java.lang.Exception
+Nov 13, 2018 1:37:09 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier applyKubernetesResourcesAtMethodScope
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method testInitialState
+Nov 13, 2018 1:37:15 PM org.jboss.test.arquillian.ce.common.EapBasicTestBase testInitialState
+INFO: Trying URL http://eap-app-test-arq-eap72-806ffe81.127.0.0.1.nip.io/
+[{"id":0,"name":"John Smith","email":"john.smith@mailinator.com","phoneNumber":"2125551212"}]
+{"id":0,"name":"John Smith","email":"john.smith@mailinator.com","phoneNumber":"2125551212"}
+Nov 13, 2018 1:37:26 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor deleteOpenShiftResource
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method testInitialState
+Nov 13, 2018 1:37:26 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier removeKubernetesResourcesAtMethodScope
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method testInitialState
+Nov 13, 2018 1:37:26 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor createOpenShiftResource
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method public void org.jboss.test.arquillian.ce.common.EapBasicTestBase.testCreatePerson() throws java.lang.Exception
+Nov 13, 2018 1:37:26 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier applyKubernetesResourcesAtMethodScope
+INFO: Creating environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method testCreatePerson
+{"id":1,"name":"ce-arq test for EAP","email":"cloud-enablement-feedback@redhat.com","phoneNumber":"555987654321"}
+Nov 13, 2018 1:37:36 PM org.arquillian.cube.openshift.impl.CEEnvironmentProcessor deleteOpenShiftResource
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method testCreatePerson
+Nov 13, 2018 1:37:36 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier removeKubernetesResourcesAtMethodScope
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest method testCreatePerson
+Nov 13, 2018 1:37:37 PM org.arquillian.cube.openshift.impl.resources.OpenShiftResourceFactory deleteEnvironment
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest
+[2018-11-13T19:37:39Z] [Normal] [DeploymentConfig:eap-app]: (ReplicationControllerScaled) Scaled replication controller "eap-app-1" from 1 to 0
+
+[2018-11-13T19:37:39Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulDelete) Deleted pod: eap-app-1-vjb8b
+
+[2018-11-13T19:37:39Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+
+[2018-11-13T19:37:39Z] [Normal] [Pod:testrunner]: (Killing) Killing container with id docker://testrunner:Need to kill Pod
+
+[2018-11-13T19:37:42Z] [Warning] [Pod:eap-app-1-vjb8b]: (Unhealthy) Liveness probe failed: 
+
+[2018-11-13T19:37:42Z] [Normal] [Pod:eap-app-1-vjb8b]: (Killing) Killing container with id docker://eap-app:Need to kill Pod
+
+Nov 13, 2018 1:37:45 PM org.arquillian.cube.kubernetes.impl.resources.KubernetesResourcesApplier removeKubernetesResourcesAtClassScope
+INFO: Deleting environment for org.jboss.test.arquillian.ce.eap72.Eap72HttpsTest
+Deleting project: test-arq-eap72-806ffe81...
+Project: test-arq-eap72-806ffe81, successfully deleted
+[32mDestroying Session:806ffe81[m

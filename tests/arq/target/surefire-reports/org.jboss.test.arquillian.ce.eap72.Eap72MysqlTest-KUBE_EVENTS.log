@@ -1,0 +1,243 @@
+[2018-11-12T23:07:32Z] [Warning] [BuildConfig:eap-app]: (BuildConfigTriggerFailed) error triggering Build for BuildConfig test-arq-eap72-85830df4/eap-app: Internal error occurred: build config test-arq-eap72-85830df4/eap-app has already instantiated a build for imageid docker-registry.engineering.redhat.com/kwills/eap72-openshift@sha256:b3580b1962d7dc1975a41c41530b30a6de60e6b66d2b3010c205bbebfdd2a8d5
+[2018-11-12T23:07:32Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-85830df4/eap-app-1-build to localhost
+[2018-11-12T23:07:32Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-85830df4/testrunner to localhost
+[2018-11-12T23:07:33Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T23:07:33Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:07:33Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:07:34Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:07:34Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-85830df4/eap-app-1 is now running
+[2018-11-12T23:07:35Z] [Normal] [DeploymentConfig:eap-app-mysql]: (DeploymentCreated) Created new replication controller "eap-app-mysql-1" for version 1
+[2018-11-12T23:07:35Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-85830df4/eap-app-mysql-1-deploy to localhost
+[2018-11-12T23:07:37Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-12T23:07:38Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Created) Created container
+[2018-11-12T23:07:38Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:07:38Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-12T23:07:38Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:07:38Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-5rdsw
+[2018-11-12T23:07:38Z] [Normal] [Pod:eap-app-mysql-1-5rdsw]: (Scheduled) Successfully assigned test-arq-eap72-85830df4/eap-app-mysql-1-5rdsw to localhost
+[2018-11-12T23:07:38Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Started) Started container
+[2018-11-12T23:07:38Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-12T23:07:38Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:07:39Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-12T23:07:39Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-12T23:07:39Z] [Normal] [Pod:eap-app-mysql-1-5rdsw]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-12T23:07:39Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-12T23:07:40Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-12T23:07:41Z] [Normal] [Pod:eap-app-mysql-1-5rdsw]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-12T23:07:42Z] [Normal] [Pod:eap-app-mysql-1-5rdsw]: (Created) Created container
+[2018-11-12T23:07:42Z] [Normal] [Pod:eap-app-mysql-1-5rdsw]: (Started) Started container
+[2018-11-12T23:07:52Z] [Warning] [Pod:eap-app-mysql-1-5rdsw]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-12T23:08:02Z] [Warning] [Pod:eap-app-mysql-1-5rdsw]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-12T23:08:12Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-13T00:38:13Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-b5986850/testrunner to localhost
+[2018-11-13T00:38:14Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-b5986850/eap-app-1-build to localhost
+[2018-11-13T00:38:15Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:38:15Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:38:15Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:38:15Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:38:16Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-b5986850/eap-app-1 is now running
+[2018-11-13T00:38:17Z] [Normal] [DeploymentConfig:eap-app-mysql]: (DeploymentCreated) Created new replication controller "eap-app-mysql-1" for version 1
+[2018-11-13T00:38:17Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-b5986850/eap-app-mysql-1-deploy to localhost
+[2018-11-13T00:38:18Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T00:38:19Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Created) Created container
+[2018-11-13T00:38:19Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:38:19Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:38:19Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T00:38:19Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-57f96
+[2018-11-13T00:38:19Z] [Normal] [Pod:eap-app-mysql-1-57f96]: (Scheduled) Successfully assigned test-arq-eap72-b5986850/eap-app-mysql-1-57f96 to localhost
+[2018-11-13T00:38:19Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Started) Started container
+[2018-11-13T00:38:19Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T00:38:20Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:38:20Z] [Normal] [Pod:eap-app-mysql-1-57f96]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T00:38:20Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T00:38:20Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T00:38:20Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T00:38:21Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T00:38:22Z] [Normal] [Pod:eap-app-mysql-1-57f96]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T00:38:22Z] [Normal] [Pod:eap-app-mysql-1-57f96]: (Created) Created container
+[2018-11-13T00:38:22Z] [Normal] [Pod:eap-app-mysql-1-57f96]: (Started) Started container
+[2018-11-13T00:38:33Z] [Warning] [Pod:eap-app-mysql-1-57f96]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:51:14Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-70bae733/testrunner to localhost
+[2018-11-13T19:51:14Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-70bae733/eap-app-1-build to localhost
+[2018-11-13T19:51:15Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:51:15Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:51:15Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:51:16Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:51:17Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-70bae733/eap-app-1 is now running
+[2018-11-13T19:51:17Z] [Normal] [DeploymentConfig:eap-app-mysql]: (DeploymentCreated) Created new replication controller "eap-app-mysql-1" for version 1
+[2018-11-13T19:51:17Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-70bae733/eap-app-mysql-1-deploy to localhost
+[2018-11-13T19:51:18Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T19:51:18Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Created) Created container
+[2018-11-13T19:51:19Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-wc8t9
+[2018-11-13T19:51:19Z] [Normal] [Pod:eap-app-mysql-1-wc8t9]: (Scheduled) Successfully assigned test-arq-eap72-70bae733/eap-app-mysql-1-wc8t9 to localhost
+[2018-11-13T19:51:19Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Started) Started container
+[2018-11-13T19:51:19Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:51:20Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:51:20Z] [Normal] [Pod:eap-app-mysql-1-wc8t9]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:51:20Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:51:20Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T19:51:20Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:51:21Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T19:51:22Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:51:22Z] [Normal] [Pod:eap-app-mysql-1-wc8t9]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:51:22Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:51:22Z] [Normal] [Pod:eap-app-mysql-1-wc8t9]: (Created) Created container
+[2018-11-13T19:51:22Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:51:23Z] [Normal] [Pod:eap-app-mysql-1-wc8t9]: (Started) Started container
+[2018-11-13T19:51:35Z] [Warning] [Pod:eap-app-mysql-1-wc8t9]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:51:45Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-13T19:53:39Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-0b758cce/testrunner to localhost
+[2018-11-13T19:53:39Z] [Warning] [BuildConfig:eap-app]: (BuildConfigTriggerFailed) error triggering Build for BuildConfig test-arq-eap72-0b758cce/eap-app: Internal error occurred: build config test-arq-eap72-0b758cce/eap-app has already instantiated a build for imageid docker-registry.engineering.redhat.com/kwills/eap72-openshift@sha256:b3580b1962d7dc1975a41c41530b30a6de60e6b66d2b3010c205bbebfdd2a8d5
+[2018-11-13T19:53:40Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-0b758cce/eap-app-1-build to localhost
+[2018-11-13T19:53:40Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:53:41Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:53:41Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:53:41Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:53:42Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-0b758cce/eap-app-1 is now running
+[2018-11-13T19:53:42Z] [Normal] [DeploymentConfig:eap-app-mysql]: (DeploymentCreated) Created new replication controller "eap-app-mysql-1" for version 1
+[2018-11-13T19:53:42Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-0b758cce/eap-app-mysql-1-deploy to localhost
+[2018-11-13T19:53:43Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T19:53:44Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Created) Created container
+[2018-11-13T19:53:44Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-xh48b
+[2018-11-13T19:53:44Z] [Normal] [Pod:eap-app-mysql-1-xh48b]: (Scheduled) Successfully assigned test-arq-eap72-0b758cce/eap-app-mysql-1-xh48b to localhost
+[2018-11-13T19:53:44Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Started) Started container
+[2018-11-13T19:53:45Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:53:45Z] [Normal] [Pod:eap-app-mysql-1-xh48b]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:53:45Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T19:53:46Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T19:53:46Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:53:47Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:53:47Z] [Normal] [Pod:eap-app-mysql-1-xh48b]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:53:47Z] [Normal] [Pod:eap-app-mysql-1-xh48b]: (Created) Created container
+[2018-11-13T19:53:47Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:53:48Z] [Normal] [Pod:eap-app-mysql-1-xh48b]: (Started) Started container
+[2018-11-13T19:53:49Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:53:49Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:53:50Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:54:01Z] [Warning] [Pod:eap-app-mysql-1-xh48b]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:55:40Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-1bdc4409/testrunner to localhost
+[2018-11-13T19:55:40Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-1bdc4409/eap-app-1-build to localhost
+[2018-11-13T19:55:40Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:55:41Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:55:41Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:55:42Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:55:42Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-1bdc4409/eap-app-1 is now running
+[2018-11-13T19:55:43Z] [Normal] [DeploymentConfig:eap-app-mysql]: (DeploymentCreated) Created new replication controller "eap-app-mysql-1" for version 1
+[2018-11-13T19:55:43Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-1bdc4409/eap-app-mysql-1-deploy to localhost
+[2018-11-13T19:55:44Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T19:55:44Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Created) Created container
+[2018-11-13T19:55:45Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:55:45Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:55:45Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-dm6sq
+[2018-11-13T19:55:45Z] [Normal] [Pod:eap-app-mysql-1-dm6sq]: (Scheduled) Successfully assigned test-arq-eap72-1bdc4409/eap-app-mysql-1-dm6sq to localhost
+[2018-11-13T19:55:45Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:55:45Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T19:55:45Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Started) Started container
+[2018-11-13T19:55:45Z] [Normal] [Pod:eap-app-mysql-1-dm6sq]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:55:46Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:55:47Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T19:55:47Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:55:47Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:55:48Z] [Normal] [Pod:eap-app-mysql-1-dm6sq]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:55:48Z] [Normal] [Pod:eap-app-mysql-1-dm6sq]: (Created) Created container
+[2018-11-13T19:55:48Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:55:48Z] [Normal] [Pod:eap-app-mysql-1-dm6sq]: (Started) Started container
+[2018-11-13T19:55:56Z] [Warning] [Pod:eap-app-mysql-1-dm6sq]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:56:06Z] [Warning] [Pod:eap-app-mysql-1-dm6sq]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:57:36Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-941e4e4a/testrunner to localhost
+[2018-11-13T19:57:36Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-941e4e4a/eap-app-1-build to localhost
+[2018-11-13T19:57:37Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:57:37Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:57:37Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:57:38Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:57:38Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-941e4e4a/eap-app-1 is now running
+[2018-11-13T19:57:42Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T19:57:42Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T19:57:43Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:57:43Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:57:43Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T19:57:44Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:57:45Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T19:57:45Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T19:57:46Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T19:57:46Z] [Normal] [DeploymentConfig:eap-app-mysql]: (DeploymentCreated) Created new replication controller "eap-app-mysql-1" for version 1
+[2018-11-13T19:57:46Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-941e4e4a/eap-app-mysql-1-deploy to localhost
+[2018-11-13T19:57:47Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T19:57:47Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Created) Created container
+[2018-11-13T19:57:48Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-z7xjx
+[2018-11-13T19:57:48Z] [Normal] [Pod:eap-app-mysql-1-z7xjx]: (Scheduled) Successfully assigned test-arq-eap72-941e4e4a/eap-app-mysql-1-z7xjx to localhost
+[2018-11-13T19:57:48Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Started) Started container
+[2018-11-13T19:57:49Z] [Normal] [Pod:eap-app-mysql-1-z7xjx]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:57:51Z] [Normal] [Pod:eap-app-mysql-1-z7xjx]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T19:57:51Z] [Normal] [Pod:eap-app-mysql-1-z7xjx]: (Created) Created container
+[2018-11-13T19:57:52Z] [Normal] [Pod:eap-app-mysql-1-z7xjx]: (Started) Started container
+[2018-11-13T19:58:06Z] [Warning] [Pod:eap-app-mysql-1-z7xjx]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T19:58:17Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod
+[2018-11-13T21:09:17Z] [Normal] [Pod:testrunner]: (Scheduled) Successfully assigned test-arq-eap72-cb1ac47e/testrunner to localhost
+[2018-11-13T21:09:17Z] [Normal] [Pod:eap-app-1-build]: (Scheduled) Successfully assigned test-arq-eap72-cb1ac47e/eap-app-1-build to localhost
+[2018-11-13T21:09:18Z] [Normal] [Pod:testrunner]: (Pulling) pulling image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T21:09:18Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T21:09:18Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T21:09:18Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T21:09:19Z] [Normal] [Build:eap-app-1]: (BuildStarted) Build test-arq-eap72-cb1ac47e/eap-app-1 is now running
+[2018-11-13T21:09:22Z] [Normal] [Pod:testrunner]: (Pulled) Successfully pulled image "jboss-eap-7/eap72-openshift:latest"
+[2018-11-13T21:09:22Z] [Normal] [Pod:testrunner]: (Created) Created container
+[2018-11-13T21:09:23Z] [Normal] [Pod:testrunner]: (Started) Started container
+[2018-11-13T21:09:24Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T21:09:24Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T21:09:24Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T21:09:25Z] [Normal] [DeploymentConfig:eap-app-mysql]: (DeploymentCreated) Created new replication controller "eap-app-mysql-1" for version 1
+[2018-11-13T21:09:25Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-cb1ac47e/eap-app-mysql-1-deploy to localhost
+[2018-11-13T21:09:25Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T21:09:25Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Created) Created container
+[2018-11-13T21:09:26Z] [Normal] [Pod:eap-app-1-build]: (Pulled) Container image "openshift/origin-docker-builder:v3.11" already present on machine
+[2018-11-13T21:09:26Z] [Normal] [ReplicationController:eap-app-mysql-1]: (SuccessfulCreate) Created pod: eap-app-mysql-1-jtq9j
+[2018-11-13T21:09:26Z] [Normal] [Pod:eap-app-mysql-1-jtq9j]: (Scheduled) Successfully assigned test-arq-eap72-cb1ac47e/eap-app-mysql-1-jtq9j to localhost
+[2018-11-13T21:09:26Z] [Normal] [Pod:eap-app-1-build]: (Created) Created container
+[2018-11-13T21:09:26Z] [Normal] [Pod:eap-app-mysql-1-deploy]: (Started) Started container
+[2018-11-13T21:09:27Z] [Normal] [Pod:eap-app-mysql-1-jtq9j]: (Pulling) pulling image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T21:09:27Z] [Normal] [Pod:eap-app-1-build]: (Started) Started container
+[2018-11-13T21:09:30Z] [Normal] [Pod:eap-app-mysql-1-jtq9j]: (Pulled) Successfully pulled image "registry.access.redhat.com/rhscl/mysql-57-rhel7@sha256:4f00f4667ebddf7eb6f9b7a44ef854a7d3b252da5667aada18d05c5e3ea8a020"
+[2018-11-13T21:09:30Z] [Normal] [Pod:eap-app-mysql-1-jtq9j]: (Created) Created container
+[2018-11-13T21:09:31Z] [Normal] [Pod:eap-app-mysql-1-jtq9j]: (Started) Started container
+[2018-11-13T21:09:37Z] [Warning] [Pod:eap-app-mysql-1-jtq9j]: (Unhealthy) Readiness probe failed: sh: cannot set terminal process group (-1): Inappropriate ioctl for device
+sh: no job control in this shell
+ERROR 2003 (HY000): Can't connect to MySQL server on '127.0.0.1' (111)
+
+[2018-11-13T21:10:34Z] [Normal] [DeploymentConfig:eap-app]: (DeploymentCreated) Created new replication controller "eap-app-1" for version 1
+[2018-11-13T21:10:34Z] [Normal] [Pod:eap-app-1-deploy]: (Scheduled) Successfully assigned test-arq-eap72-cb1ac47e/eap-app-1-deploy to localhost
+[2018-11-13T21:10:35Z] [Normal] [Pod:eap-app-1-deploy]: (Pulled) Container image "openshift/origin-deployer:v3.11" already present on machine
+[2018-11-13T21:10:35Z] [Normal] [Build:eap-app-1]: (BuildCompleted) Build test-arq-eap72-cb1ac47e/eap-app-1 completed successfully
+[2018-11-13T21:10:35Z] [Normal] [Pod:eap-app-1-deploy]: (Created) Created container
+[2018-11-13T21:10:35Z] [Normal] [ReplicationController:eap-app-1]: (SuccessfulCreate) Created pod: eap-app-1-dtlxd
+[2018-11-13T21:10:35Z] [Normal] [Pod:eap-app-1-dtlxd]: (Scheduled) Successfully assigned test-arq-eap72-cb1ac47e/eap-app-1-dtlxd to localhost
+[2018-11-13T21:10:36Z] [Normal] [Pod:eap-app-1-deploy]: (Started) Started container
+[2018-11-13T21:10:36Z] [Normal] [Pod:eap-app-1-dtlxd]: (Pulling) pulling image "172.30.1.1:5000/test-arq-eap72-cb1ac47e/eap-app@sha256:45953d74e0ecf7987271a1e5fe0e58c46465bb1d7c60332072789efe43edce57"
+[2018-11-13T21:10:36Z] [Normal] [Pod:eap-app-1-dtlxd]: (Pulled) Successfully pulled image "172.30.1.1:5000/test-arq-eap72-cb1ac47e/eap-app@sha256:45953d74e0ecf7987271a1e5fe0e58c46465bb1d7c60332072789efe43edce57"
+[2018-11-13T21:10:36Z] [Normal] [Pod:eap-app-1-dtlxd]: (Created) Created container
+[2018-11-13T21:10:37Z] [Normal] [Pod:eap-app-1-dtlxd]: (Started) Started container
+[2018-11-13T21:11:00Z] [Normal] [Pod:eap-app-1-deploy]: (Killing) Killing container with id docker://deployment:Need to kill Pod

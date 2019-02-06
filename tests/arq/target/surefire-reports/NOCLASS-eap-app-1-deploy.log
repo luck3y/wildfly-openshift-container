@@ -1,0 +1,2 @@
+--> Scaling eap-app-1 to 1
+error: couldn't scale eap-app-1 to 1: replicationcontrollers "eap-app-1" not found
